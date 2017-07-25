@@ -40,6 +40,7 @@ int		input_rotate_recurring(t_push_swap *ps, char *op)
 	if (!ps->op_list)
 		return (1);
 	if (ft_strcmp(ps->op_list->bottom->op, op))
+	{
 		if ((bottom_is_rotate(ps)) && ((ps->num_elements_a -
 		ps->op_list->bottom->num) < ps->op_list->bottom->num))
 		{
@@ -51,8 +52,8 @@ int		input_rotate_recurring(t_push_swap *ps, char *op)
 				while (ps->m-- > 0)
 					input_op(ps, OP_RRA);
 		}
-		else
-			return (1);
+		return (1);
+	}
 	if (bottom_is_rotate(ps))
 		return (ps->op_list->bottom->num + 1);
 	return (1);
