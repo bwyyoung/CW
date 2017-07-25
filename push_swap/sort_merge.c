@@ -96,15 +96,16 @@ void		sort_merge(t_push_swap *ps, int n)
 	sort_merge(ps, len_h1);
 	if (merge_already_sorted(ps, n))
 		return ;
-	//op_rra_n_custom_1(ps, &len_h1, &len_h2);
+	op_rra_n_custom_1(ps, &len_h1, &len_h2);
+	//op_pb_n(ps, len_h1);
 	op_pb_n_custom_1(ps, &len_h1, &len_h2);
 	sort_merge(ps, len_h2);
-	//op_rra_n_custom_2(ps, &len_h1, &len_h2);
+	op_rra_n_custom_2(ps, &len_h1, &len_h2);
 	print_push_swap(ps);
 	ps->i = 0;
 	ps->j = 0;
 	if (merge_shortcut(ps, len_h1, len_h2))
 		return ;
 	merge(ps, len_h1, len_h2);
-	//op_rra_n_custom_1(ps, &len_h1, &len_h2);
+	op_rra_n_custom_1(ps, &len_h1, &len_h2);
 }

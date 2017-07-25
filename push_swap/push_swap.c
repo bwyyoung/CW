@@ -92,7 +92,7 @@ int					delete_push_swap(t_push_swap *ps, t_bool err)
 	{
 		ps->tmp_num = ps->op_list;
 		ps->op_list = ps->op_list->next;
-		ft_printf("%s\n", ps->tmp_num->op);
+		(err ? 0 : ft_printf("%s\n", ps->tmp_num->op));
 		SAFE_DELETE(ps->tmp_num->op);
 		SAFE_DELETE(ps->tmp_num);
 	}

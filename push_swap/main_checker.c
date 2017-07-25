@@ -27,7 +27,7 @@ t_bool	input_loop_2(t_push_swap *ps)
 	else if (!ft_strcmp(ps->buffer, OP_SS))
 		op_ss(ps);
 	else
-		return (false);
+		return (true); //TODO: TEMP
 	return (true);
 }
 
@@ -66,7 +66,7 @@ int		main(int argc, char **argv)
 {
 	t_push_swap		*data;
 
-	ft_printf("checker 1 %i\n", argc - 1);
+	ft_printf("checker 1 %i | %s\n", argc - 1, argv[1]);
 	if (argc == 1)
 		return (0);
 	data = init_push_swap();
@@ -82,7 +82,7 @@ int		main(int argc, char **argv)
 	if (!verify_input(data, argv))
 		return (delete_push_swap(data, true));
 	ft_printf("checker 5\n");
-	data->verbose = false;
+	data->verbose = true;
 	ft_printf("checker 6\n");
 	if (!input_loop(data))
 		return (delete_push_swap(data, true));
