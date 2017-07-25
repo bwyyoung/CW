@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="COREWAR"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="COREWAR">
+				<Option output="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/COREWAR" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/local/Cellar/llvm/3.9.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 COREWAR"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="COREWAR/fast">
+				<Option output="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/COREWAR" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/local/Cellar/llvm/3.9.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 COREWAR/fast"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/add_final_padding.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/add_precision_padding.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_basetoa.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_count_digits.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_itoa_ularge.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_printf.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_printf.h">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_putcharn.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_strtolower.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/ft_utils.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_current.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_number_argument.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_string_decimal.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_string_hex.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_string_octal.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_string_pointer.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_string_string.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/get_unsigned_number_argument.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/handle_format.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/parse_conversion.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/parse_flags.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/parse_length.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/parse_precision.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/parse_specifier.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/parse_width.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/print_char.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/print_conversion.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/print_format_error.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/print_normal.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/print_wide_chars.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/printnum.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/validate_conversion.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/validate_flags.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/validate_flags_ignored.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/input.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_atoi.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_bzero.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_error.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isalnum.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isalpha.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isascii.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isdigit.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isprint.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_itoa.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_lstadd.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_lstdel.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_lstdelone.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_lstiter.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_lstmap.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_lstnew.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memalloc.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memccpy.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memchr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memcmp.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memcpy.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memdel.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memmove.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_memset.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_pow.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putchar.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putchar_fd.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putendl.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putendl_fd.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putnbr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putnbr_fd.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putstr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_putstr_fd.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_sqrt.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strcat.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strchr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strclr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strcmp.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strcpy.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strdel.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strdup.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strequ.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_striter.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_striteri.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strjoin.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strlcat.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strlen.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strmap.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strmapi.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strncat.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strncmp.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strncpy.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strnequ.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strnew.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strnstr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strrchr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strrev.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strsplit.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strstr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strsub.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_strtrim.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_tolower.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_toupper.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/get_next_line.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/get_next_line.h">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/libft.h">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/main_checker.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/main_push_swap.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_pa.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_pb.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_ra.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_rb.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_rr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_rra.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_rrb.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_rrr.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_sa.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_sb.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/op_ss.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/push_swap.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/push_swap.h">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

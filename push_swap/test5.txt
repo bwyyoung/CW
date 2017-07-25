@@ -1,0 +1,32 @@
+checker 1 1
+checker 2
+checker 3
+checker 4
+checker 5
+checker 6
+input_loop 0
+input_loop 1
+input_loop 2
+input_loop 3
+input_loop 4
+input_loop 5
+input_loop 6
+input_loop 7
+input_loop 8
+input_loop 9
+input_loop 10
+input_loop 11
+input_loop 12
+input_loop 13
+input_loop 14
+input_loop 15
+input_loop 16
+input_loop 17
+input_loop 18
+input_loop 19
+input_loop 20
+input_loop 21
+input_loop 22
+checker 7
+OK
+checker 8
