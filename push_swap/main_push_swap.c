@@ -23,7 +23,7 @@ int		main(int argc, char **argv)
 		return (delete_push_swap(data, true));
 	data->num_elements = argc - 1;
 	data->num_elements_a = argc - 1;
-	data->verbose = true;
+	data->verbose = false;
 	if (!verify_input(data, argv))
 		return (delete_push_swap(data, true));
 	sort_merge(data, data->num_elements);
