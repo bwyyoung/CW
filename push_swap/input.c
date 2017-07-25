@@ -41,7 +41,8 @@ t_bool	input_op(t_push_swap *ps, char *op)
 	}
 	if (!input_op_check(ps, op))
 		return (input_delete_redundancy(ps));
-	ps->op_list->bottom->next = init_num(input_rotate_recurring(ps, op), 0);
+	ps->k = input_rotate_recurring(ps, op);
+	ps->op_list->bottom->next = init_num(ps->k, 0);
 	ps->op_list->bottom->next->op = ft_strdup(op);
 	ps->op_list->bottom->next->prev = ps->op_list->bottom;
 	ps->op_list->bottom = ps->op_list->bottom->next;

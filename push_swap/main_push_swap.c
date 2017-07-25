@@ -27,6 +27,7 @@ int		main(int argc, char **argv)
 	if (!verify_input(data, argv))
 		return (delete_push_swap(data, true));
 	sort_merge(data, data->num_elements);
+	input_rotate_recurring(data, "OFFSET");
 	print_push_swap(data);
 	delete_push_swap(data, false);
 	return (0);

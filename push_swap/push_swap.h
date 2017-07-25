@@ -67,6 +67,7 @@ typedef struct		s_push_swap
 	int				i;
 	int				j;
 	int				m;
+	int				k;
 }					t_push_swap;
 
 t_push_swap			*init_push_swap();
