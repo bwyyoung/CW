@@ -47,19 +47,20 @@ t_bool		op_rra_n_custom_1(t_push_swap *ps, int *n, int *m)
 {
 	if (*n + *m != ps->num_elements_a)
 		return (false);
-	ps->i = 0;
 	while ((ps->num_elements_a >= 2)
-		&& (ps->pile_a->num > ps->pile_a->bottom->num))
+		&& (ps->pile_a->num > ps->pile_a->bottom->num)
+		   && (*m < ps->num_elements_a))
 	{
 		op_rra_n(ps, 1);
+		*m = *m + 1;
 		//*n = *n + 1;
-		ps->i++;
 		/*if (ps->i >= ps->num_elements_a)
 		{
 			op_ra_n(ps, ps->num_elements_a);
 			break;
 		}*/
 	}
+	input_rotate_recurring(ps, "OFFSET");
 	return (true);
 }
 

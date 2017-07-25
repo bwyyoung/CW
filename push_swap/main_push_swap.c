@@ -23,14 +23,14 @@ int		main(int argc, char **argv)
 		return (delete_push_swap(data, true));
 	data->num_elements = argc - 1;
 	data->num_elements_a = argc - 1;
+	data->check_mode = false;
 	if (!verify_input(data, argv))
 		return (delete_push_swap(data, true));
 	sort_merge(data, data->num_elements);
-	input_rotate_recurring(data, "OFFSET");
 	data->verbose = true;
-	print_push_swap(data);
+	print_push_swap_2(data);
 
-	delete_push_swap(data, true);
+	delete_push_swap(data, false);
 
 	return (0);
 }

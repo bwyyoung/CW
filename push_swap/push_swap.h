@@ -74,6 +74,7 @@ t_push_swap			*init_push_swap();
 int					delete_push_swap(t_push_swap *ps, t_bool err);
 t_num				*init_num(int n, int index);
 int					print_push_swap(t_push_swap *ps);
+int					print_push_swap_2(t_push_swap *ps);
 t_bool				checker_input(t_push_swap *ps);
 t_bool				verify_input(t_push_swap *ps, char **argv);
 t_bool				input_op(t_push_swap *ps, char *op);

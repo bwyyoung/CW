@@ -37,24 +37,35 @@ t_bool	bottom_is_rotate(t_push_swap *ps)
 
 int		input_rotate_recurring(t_push_swap *ps, char *op)
 {
-	if (!ps->op_list || ps->check_mode)
+	if (ps->check_mode || !ps->op_list)
 		return (1);
 	if (ft_strcmp(ps->op_list->bottom->op, op))
 	{
-		if ((bottom_is_rotate(ps)) && ((ps->num_elements_a -
+		if ((ps->num_elements_a > 1) && (bottom_is_rotate(ps))
+			&& ((ps->num_elements_a -
 		ps->op_list->bottom->num) < ps->op_list->bottom->num))
 		{
-			ps->m = ps->num_elements_a;
+			ps->m = ps->op_list->bottom->num;
+			ps->k = ps->num_elements_a - ps->op_list->bottom->num;
 			if (!ft_strcmp(ps->op_list->bottom->op, OP_RRA))
-				while (ps->m-- > 0)
-					input_op(ps, OP_RA);
+			{
+				while (ps->op_list && !ft_strcmp(ps->op_list->bottom->op, OP_RRA))
+					input_delete_redundancy(ps);
+				while (ps->k-- > 0)
+						input_op(ps, OP_RA);
+			}
 			else if (!ft_strcmp(ps->op_list->bottom->op, OP_RA))
-				while (ps->m-- > 0)
+			{
+				while (ps->op_list && !ft_strcmp(ps->op_list->bottom->op, OP_RA))
+					input_delete_redundancy(ps);
+				while (ps->k-- > 0)
 					input_op(ps, OP_RRA);
+			}
+		//	else if (!ft_strcmp(ps->op_list->bottom->op, OP_RA))
+		//		while (ps->k-- > 0)
+		//			input_op(ps, OP_RRA);
 		}
 		return (1);
 	}
-	if (bottom_is_rotate(ps))
-		return (ps->op_list->bottom->num + 1);
 	return (1);
 }

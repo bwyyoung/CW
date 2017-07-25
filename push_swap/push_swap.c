@@ -56,6 +56,28 @@ t_num				*init_num(int n, int index)
 	return (num);
 }
 
+int					print_push_swap_2(t_push_swap *ps)
+{
+	if (!DEBUG_PS && !ps->verbose)
+		return (0);
+	ps->tmp_num = ps->pile_a;
+	ft_putstr("--------------\nA: ");
+	while (ps->tmp_num)
+	{
+		ft_printf("%i | ", ps->tmp_num->num);
+		ps->tmp_num = ps->tmp_num->next;
+	}
+	ft_putstr("\nB: ");
+	ps->tmp_num = ps->pile_b;
+	while (ps->tmp_num)
+	{
+		ft_printf("%i | ", ps->tmp_num->num);
+		ps->tmp_num = ps->tmp_num->next;
+	}
+	ft_putstr("\n--------------\n");
+	return (0);
+}
+
 int					print_push_swap(t_push_swap *ps)
 {
 	if (!DEBUG_PS && !ps->verbose)

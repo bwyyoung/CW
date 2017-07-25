@@ -27,7 +27,10 @@ t_bool	input_loop_2(t_push_swap *ps)
 	else if (!ft_strcmp(ps->buffer, OP_SS))
 		op_ss(ps);
 	else
+	{
+		ft_printf("%s\n", ps->buffer);
 		return (true); //TODO: TEMP
+	}
 	return (true);
 }
 
@@ -88,7 +91,7 @@ int		main(int argc, char **argv)
 		return (delete_push_swap(data, true));
 	ft_printf("checker 7\n");
 	check_solved(data);
-	ft_printf("checker 8\n");
+	ft_printf("checker 8 %i | %s\n", argc - 1, argv[1]);
 	delete_push_swap(data, false);
 	return (0);
 }

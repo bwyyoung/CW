@@ -52,24 +52,38 @@ t_bool		op_pb_n(t_push_swap *ps, int n)
 
 t_bool		op_pb_n_custom_1(t_push_swap *ps, int *n, int *m)
 {
-	ps->i = *n - 1;
+	ps->k = ps->num_elements_b;
+	ps->i = *n;
+	ps->j = *m;
 	while (ps->i-- > 0 && *m >= 0)
 	{
-		if (ps->pile_b && ps->num_elements_a >= 2 &&
+		/*if (ps->pile_a && ps->pile_b && (ps->num_elements_a >= 2) &&
 			(ps->pile_a->num > ps->pile_a->bottom->num) &&
 				(ps->pile_b->num < ps->pile_a->bottom->num))
 		{
 			op_rra_n(ps, 1);
 			op_pb_n(ps, 2);
+			op_pb_n(ps, 1);
 			*n = *n + 1;
 			*m = *m - 1;
+			ps->i--;
+			//continue ;
+		}*/
+		//TODO: BUG HERE
+	/*	if (ps->pile_a && ps->pile_b  && (ps->num_elements_b > 2) &&
+				(ps->pile_b->bottom->num < ps->pile_a->num) &&
+				(ps->pile_b->bottom->num > ps->pile_b->num) &&
+				(ps->i != *n - 1) && ps->k > 0)
+		{
+
+			op_rrb_n(ps, 1);
+			op_pb_n(ps, 1);
+			*n = *n + 1;
+			ps->k--;
 			continue ;
-		}
+		}*/
 		op_pb_n(ps, 1);
 	}
-	if (ps->num_elements_a >= 2 && (ps->pile_a->num > ps->pile_a->next->num)
-		&& ps->pile_b && (ps->pile_b->num < ps->pile_a->next->num))
-		op_sa_n(ps, 1);
-	op_pb_n(ps, 1);
+	//op_pb_n(ps, 1);
 	return (true);
 }

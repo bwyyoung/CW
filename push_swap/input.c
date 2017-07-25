@@ -31,7 +31,7 @@ t_bool	input_op_check(t_push_swap *ps, char *op)
 
 t_bool	input_op(t_push_swap *ps, char *op)
 {
-	((ps->verbose) ? ft_printf("%s\n", op) : 0);
+	((ps->verbose) ? ft_printf("input_op: %s\n", op) : 0);
 	if (ps->check_mode)
 		return (false);
 	if (!ps->op_list)
@@ -43,8 +43,12 @@ t_bool	input_op(t_push_swap *ps, char *op)
 	}
 	if (!input_op_check(ps, op))
 		return (input_delete_redundancy(ps));
-	ps->k = input_rotate_recurring(ps, op);
-	ps->op_list->bottom->next = init_num(ps->k, 0);
+	if (!ps->op_list->bottom->num)
+		ps->op_list->bottom->num = 1;
+	if (!ft_strcmp(ps->op_list->bottom->op, op))
+		ps->op_list->bottom->next = init_num(ps->op_list->bottom->num + 1, 0);
+	else
+		ps->op_list->bottom->next = init_num(1, 0);
 	ps->op_list->bottom->next->op = ft_strdup(op);
 	ps->op_list->bottom->next->prev = ps->op_list->bottom;
 	ps->op_list->bottom = ps->op_list->bottom->next;
