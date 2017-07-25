@@ -47,12 +47,12 @@ void		merge(t_push_swap *ps, int len_h1, int len_h2)
 		if (ps->pile_a && ps->pile_b &&
 				ps->pile_a->bottom->num < ps->pile_b->num)
 		{
-			((ps->i) ? op_rrb_custom_b(ps): 0);
+			//((ps->i) ? op_rrb_custom_b(ps): 0);
 			op_pa_n(ps, 1);
 			ps->i++;
 			continue ;
 		}
-		((ps->j) ? op_rrb_custom_a(ps): 0);
+		//((ps->j) ? op_rrb_custom_a(ps): 0);
 		op_rra_n(ps, 1);
 		ps->j++;
 	}

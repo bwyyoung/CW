@@ -33,7 +33,7 @@ t_bool	input_loop_2(t_push_swap *ps)
 
 t_bool	input_loop(t_push_swap *ps)
 {
-	int i = 0;
+	int i = 1;
 	while (get_next_line(0, &ps->buffer) > 0)
 	{
 		if (!ft_strcmp(ps->buffer, OP_PA))

@@ -14,6 +14,8 @@
 
 t_bool	input_op_check(t_push_swap *ps, char *op)
 {
+	if (ps->check_mode)
+		return (true);
 	if (!ft_strcmp(ps->op_list->bottom->op, OP_PA) && !ft_strcmp(op, OP_PB))
 		return (false);
 	if (!ft_strcmp(ps->op_list->bottom->op, OP_PB) && !ft_strcmp(op, OP_PA))
@@ -64,6 +66,8 @@ t_bool	verify_input(t_push_swap *ps, char **argv)
 	if (!ps->arr_elements)
 		return (false);
 	parse_input(ps, argv);
+	ps->i = -1;
+	ps->j = -1;
 	while (++ps->i < ps->num_elements)
 		while(++ps->j < ps->num_elements)
 			if ((ps->i != ps->j) &&
@@ -110,6 +114,4 @@ void	parse_input(t_push_swap *ps, char **argv)
 		ps->pile_a = ps->tmp_num;
 		ps->arr_elements[ps->i - 1] = ps->tmp_num->num;
 	}
-	ps->i = -1;
-	ps->j = -1;
 }

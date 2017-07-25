@@ -37,7 +37,7 @@ t_bool	bottom_is_rotate(t_push_swap *ps)
 
 int		input_rotate_recurring(t_push_swap *ps, char *op)
 {
-	if (!ps->op_list)
+	if (!ps->op_list || ps->check_mode)
 		return (1);
 	if (ft_strcmp(ps->op_list->bottom->op, op))
 	{
