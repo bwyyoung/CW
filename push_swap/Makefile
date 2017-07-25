@@ -28,18 +28,19 @@ SRC_PUSH_SWAP	=	main_push_swap.c				\
 					sort_merge.c					\
 					$(SRC_COMMON)
 					
-SRC_COMMON		=	op_pa.c		\
-					op_pb.c		\
-					op_ra.c		\
-					op_rb.c		\
-					op_rr.c		\
-					op_rra.c	\
-					op_rrb.c	\
-					op_rrr.c	\
-					op_sa.c		\
-					op_sb.c		\
-					op_ss.c		\
-					input.c		\
+SRC_COMMON		=	op_pa.c			\
+					op_pb.c			\
+					op_ra.c			\
+					op_rb.c			\
+					op_rr.c			\
+					op_rra.c		\
+					op_rrb.c		\
+					op_rrr.c		\
+					op_sa.c			\
+					op_sb.c			\
+					op_ss.c			\
+					input.c			\
+					input_verify.c	\
 					push_swap.c
 
 

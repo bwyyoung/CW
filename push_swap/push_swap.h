@@ -76,6 +76,8 @@ int					print_push_swap(t_push_swap *ps);
 t_bool				checker_input(t_push_swap *ps);
 t_bool				verify_input(t_push_swap *ps, char **argv);
 t_bool				input_op(t_push_swap *ps, char *op);
+t_bool				input_delete_redundancy(t_push_swap *ps);
+int					input_rotate_recurring(t_push_swap *ps, char *op);
 void				parse_input(t_push_swap *ps, char **argv);
 t_bool				parse_single_param_string(t_push_swap *ps, char **argv);
 t_bool				op_pa(t_push_swap *ps);
