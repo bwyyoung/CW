@@ -113,4 +113,6 @@ t_bool				merge_already_sorted(t_push_swap *ps, int n);
 
 void				ps_verbose(t_push_swap *ps, char *string, ...);
 t_bool				ps_flag_mode(t_push_swap *ps, char *string);
+
+int					num_already_sorted(t_push_swap *ps, int n);
 #endif

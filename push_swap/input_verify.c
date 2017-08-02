@@ -40,7 +40,6 @@ int		input_rotate_recurring(t_push_swap *ps, char *op)
 	if (ps->check_mode || !ps->op_list)
 		return (1);
 	if (ft_strcmp(ps->op_list->bottom->op, op))
-	{
 		if ((ps->num_elements_a > 1) && (bottom_is_rotate(ps))
 			&& ((ps->num_elements_a -
 		ps->op_list->bottom->num) < ps->op_list->bottom->num))
@@ -62,9 +61,26 @@ int		input_rotate_recurring(t_push_swap *ps, char *op)
 					input_op(ps, OP_RRA);
 			}
 		}
-		return (1);
-	}
 	return (1);
+}
+
+int		num_already_sorted(t_push_swap *ps, int n)
+{
+	int		i;
+
+	i = 0;
+	ps->tmp_num = ps->pile_a;
+	ps->i = ps->tmp_num->num;
+	while (ps->tmp_num && n > 0)
+	{
+		n--;
+		if (ps->i > ps->tmp_num->num)
+			return (i);
+		ps->i = ps->tmp_num->num;
+		ps->tmp_num = ps->tmp_num->next;
+		i++;
+	}
+	return (i);
 }
 
 t_bool	ps_flag_mode(t_push_swap *ps, char *string)
