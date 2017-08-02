@@ -33,10 +33,12 @@ int		main(int argc, char **argv)
 		ft_printf("%s\n", data->tmp_num->op);
 		data->tmp_num = data->tmp_num->next;
 	}
-	data->verbose = true;
-	ft_printf("./push_swap arg |%s|\n", argv[1]);
-	print_push_swap(data);
+	if (DEBUG_PS)
+	{
+		data->verbose = true;
+		ps_verbose(data, "./push_swap arg |%s|\n", argv[1]);
+		print_push_swap(data);
+	}
 	delete_push_swap(data, false);
-
 	return (0);
 }

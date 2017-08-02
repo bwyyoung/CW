@@ -12,6 +12,21 @@
 
 #include "ft_printf.h"
 
+int					ft_vprintf(const char *format_string, va_list args)
+{
+	t_format		format;
+
+	if (!format_string)
+	{
+		ft_putendl_fd("ft_printf: format string must be valid", 2);
+		exit(1);
+	}
+	ft_bzero(&format, sizeof(t_format));
+	format.string = format_string;
+	handle_format(&format, args);
+	return (format.written);
+}
+
 int					ft_printf(const char *format_string, ...)
 {
 	va_list			args;

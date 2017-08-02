@@ -29,7 +29,7 @@
 # define OP_SA "sa"
 # define OP_SB "sb"
 # define OP_SS "ss"
-# define DEBUG_PS 0
+# define DEBUG_PS 1
 
 typedef enum
 {
@@ -109,4 +109,7 @@ t_bool				op_sb_n(t_push_swap *ps, int n);
 t_bool				op_ss(t_push_swap *ps);
 void				sort_merge(t_push_swap *ps, int n);
 t_bool				merge_already_sorted(t_push_swap *ps, int n);
+
+void				ps_verbose(t_push_swap *ps, char *string, ...);
+t_bool				ps_flag_mode(t_push_swap *ps, char *string);
 #endif

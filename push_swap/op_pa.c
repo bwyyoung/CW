@@ -52,18 +52,15 @@ t_bool		op_pa_n(t_push_swap *ps, int n)
 
 t_bool		op_pa_n_custom_1(t_push_swap *ps, int n, int m)
 {
-	//ps->k = ps->num_elements_a;
 	while (++n < m)
 	{
 		while (ps->pile_b && ps->pile_a &&
 		(ps->pile_a->num > ps->pile_a->bottom->num) &&
 		(ps->pile_b->num < ps->pile_a->bottom->num))
 		{
-			ft_printf("op_pa_n_custom_1 rra \n");
+			ps_verbose(ps, "op_pa_n_custom_1 rra \n");
 			op_rra_n(ps, 1);
-			//n--;
 		}
-		//input_rotate_recurring(ps, "OFFSET");
 		op_pa_n(ps, 1);
 	}
 	return (true);

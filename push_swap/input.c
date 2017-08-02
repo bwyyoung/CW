@@ -31,7 +31,7 @@ t_bool	input_op_check(t_push_swap *ps, char *op)
 
 t_bool	input_op(t_push_swap *ps, char *op)
 {
-	((ps->verbose) ? ft_printf("input_op: %s\n", op) : 0);
+	ps_verbose(ps, "input_op: %s\n", op);
 	if (ps->check_mode)
 		return (false);
 	if (!ps->op_list)
@@ -64,7 +64,7 @@ t_bool	verify_input(t_push_swap *ps, char **argv)
 		argv = ps->tmp_argv;
 	}
 	while (++ps->i < (ps->num_elements + 1))
-		if (!ft_isint(argv[ps->i]))
+		if (!ps_flag_mode(ps, argv[ps->i]) && !ft_isint(argv[ps->i]))
 			return (false);
 	ps->arr_elements = malloc(sizeof(int) * ps->num_elements);
 	if (!ps->arr_elements)
@@ -103,13 +103,15 @@ void	parse_input(t_push_swap *ps, char **argv)
 	ps->i = ps->num_elements + 1;
 	while (--ps->i > 0)
 	{
+		if (ps_flag_mode(ps, argv[ps->i]))
+			continue ;
 		if (!ps->pile_a)
 		{
 			ps->pile_a = init_num(ft_atoi(argv[ps->i]), ps->i - 1);
 			ps->tmp_num = ps->pile_a;
 			ps->arr_elements[ps->i - 1] = ps->tmp_num->num;
 			ps->pile_a->bottom = ps->pile_a;
-			continue;
+			continue ;
 		}
 		ps->tmp_num->prev = init_num(ft_atoi(argv[ps->i]), ps->i - 1);
 		ps->tmp_num->prev->next = ps->tmp_num;

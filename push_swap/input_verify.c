@@ -66,3 +66,13 @@ int		input_rotate_recurring(t_push_swap *ps, char *op)
 	}
 	return (1);
 }
+
+t_bool	ps_flag_mode(t_push_swap *ps, char *string)
+{
+	if (!ft_strcmp(string, "-v"))
+	{
+		ps->verbose = true;
+		return (true);
+	}
+	return (false);
+}

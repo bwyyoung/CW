@@ -23,16 +23,16 @@ void		merge(t_push_swap *ps, int len_h1, int len_h2)
 {
 	while (ps->i < len_h1 && ps->j < len_h2)
 	{
-		ft_printf("check piles |%i|%i|%i\n", ps->pile_a->num , ps->pile_b->num,
+		ps_verbose("check piles |%i|%i|%i\n", ps->pile_a->num , ps->pile_b->num,
 				  (ps->pile_a->num > ps->pile_b->num));
 		if (ps->pile_a->num <= ps->pile_b->num)
 		{
 			op_ra_n(ps, 1);
 			ps->i++;
-			ft_printf("option 1\n");
+			ps_verbose("option 1\n");
 			continue ;
 		}
-		ft_printf("option 2\n");
+		ps_verbose("option 2\n");
 		merge_pile_b(ps);
 		ps->j++;
 	}
@@ -44,7 +44,7 @@ void		merge(t_push_swap *ps, int len_h1, int len_h2)
 		merge_pile_b(ps);
 }
 
-BOOL 		calc_merge_half(int *n, int *m, int *len_h1, int *len_h2)
+t_bool 		calc_merge_half(int *n, int *m, int *len_h1, int *len_h2)
 {
 	*len_h1 = 0;
 	*len_h2 = 0;
@@ -65,29 +65,22 @@ void		sort_merge(t_push_swap *ps, int n)
 	int		len_h1;
 	int		len_h2;
 
-	ft_printf("sort merge 1 |%i|\n", n);
 	if (n <= 1)
 		return ;
-	ft_printf("sort merge 2\n");
 	calc_merge_half(&n, &m, &len_h1, &len_h2);
-	ft_printf("sort merge 3 |%i|%i|\n", len_h1, len_h2);
+	ps_verbose("sort merge 3 |%i|%i|\n", len_h1, len_h2);
 	op_ra_n(ps, len_h2);
-	ft_printf("sort merge 4 |%i\n", len_h1);
+	ps_verbose("sort merge 4 |%i\n", len_h1);
 	sort_merge(ps, len_h1);
-	ft_printf("sort merge 5\n");
 	op_rra_n(ps, len_h2);
-	ft_printf("sort merge 6\n");
 	sort_merge(ps, len_h2);
-	ft_printf("sort merge 7\n");
 	print_push_swap(ps);
 	op_pb_n(ps, len_h2);
 	op_rrb_n(ps, 1);
-	ft_printf("sort merge 8 |%i|%i|\n", len_h1, len_h2);
+	ps_verbose("sort merge 8 |%i|%i|\n", len_h1, len_h2);
 	print_push_swap(ps);
 	ps->i = 0;
 	ps->j = 0;
 	merge(ps, len_h1, len_h2);
-	ft_printf("sort merge 10\n");
 	op_rra_n(ps, n);
-	ft_printf("sort merge 11\n");
 }

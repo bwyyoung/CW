@@ -62,6 +62,7 @@ typedef struct			s_conv
 }						t_conv;
 
 int						ft_printf(const char *format_string, ...);
+int						ft_vprintf(const char *format_string, va_list args);
 void					handle_format(t_format *format, va_list args);
 int						parse_conv(t_conv *conv
 											, va_list args

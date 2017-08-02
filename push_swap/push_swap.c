@@ -83,7 +83,16 @@ int					print_push_swap(t_push_swap *ps)
 	return (0);
 }
 
+void				ps_verbose(t_push_swap *ps, char *string, ...)
+{
+	va_list args;
 
+	if (!ps->verbose)
+		return ;
+	va_start( args, string);
+	ft_vprintf(string, args);
+	va_end( args );
+}
 
 t_bool				merge_already_sorted(t_push_swap *ps, int n)
 {

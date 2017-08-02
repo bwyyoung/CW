@@ -28,8 +28,9 @@ t_bool	input_loop_2(t_push_swap *ps)
 		op_ss(ps);
 	else
 	{
-		ft_printf("%s\n", ps->buffer);
-		return (true); //TODO: TEMP
+		ps_verbose(ps, "%s\n", ps->buffer);
+		if (!ps->verbose)
+			return (false);
 	}
 	return (true);
 }
@@ -52,7 +53,7 @@ t_bool	input_loop(t_push_swap *ps)
 		else if (!input_loop_2(ps))
 			return (false);
 		SAFE_DELETE(ps->buffer);
-		ft_printf("input_loop %i\n", i++);
+		ps_verbose(ps, "input_loop %i\n", i++);
 	}
 	return (true);
 }
@@ -69,29 +70,23 @@ int		main(int argc, char **argv)
 {
 	t_push_swap		*data;
 
-	ft_printf("checker 1 %i | %s\n", argc - 1, argv[1]);
 	if (argc == 1)
 		return (0);
 	data = init_push_swap();
-	ft_printf("checker 2\n");
 	if (!data)
 		return (delete_push_swap(data, true));
-	ft_printf("checker 3\n");
 	data->echo = false;
 	data->num_elements = argc - 1;
 	data->num_elements_a = argc - 1;
 	data->check_mode = true;
-	ft_printf("checker 4\n");
 	if (!verify_input(data, argv))
 		return (delete_push_swap(data, true));
-	ft_printf("checker 5\n");
-	data->verbose = true;
-	ft_printf("checker 6\n");
+	if (DEBUG_PS)
+		data->verbose = true;
 	if (!input_loop(data))
 		return (delete_push_swap(data, true));
-	ft_printf("checker 7\n");
 	check_solved(data);
-	ft_printf("checker 8 %i | %s\n", argc - 1, argv[1]);
+	ps_verbose(data, "checker 8 %i | %s\n", argc - 1, argv[1]);
 	delete_push_swap(data, false);
 	return (0);
 }
