@@ -43,7 +43,8 @@ t_bool		merge_shortcut_small(t_push_swap *ps, int n)
 			&& (ps->pile_a->num > ps->pile_a->next->num))
 			op_sa_n(ps, 1);
 	}
-	if ((num_already_sorted(ps, n) == n))
+	ps->l = num_already_sorted(ps, n);
+	if (ps->l == n)
 		return (true);
 	return (false);
 }
@@ -85,6 +86,12 @@ t_bool		calc_merge_half(t_push_swap *ps, int *n, int *len_h1, int *len_h2)
 		return (true);
 	*len_h1 = m;
 	*len_h2 = *n - m;
+	ps->l = num_already_sorted(ps, *n);
+	if ((ps->l  > *len_h1) && (ps->l < ps->num_elements_a))
+	{
+		*len_h1 = ps->l ;
+		*len_h2 = *n - *len_h1;
+	}
 	return (true);
 }
 
@@ -94,33 +101,25 @@ void		sort_merge(t_push_swap *ps, int n)
 	int		len_h2;
 
 	if (merge_already_sorted(ps, n) ||
-	!calc_merge_half(ps, &n, &len_h1, &len_h2) || merge_shortcut_small(ps, n))
+	 merge_shortcut_small(ps, n) || !calc_merge_half(ps, &n, &len_h1, &len_h2))
 		return ;
-	if (n > 3 && (num_already_sorted(ps, n) > len_h1))
-	{
-		len_h1 = num_already_sorted(ps, n);
-		len_h2 = n - len_h1;
-	}
-	//TODO: Extend len_h1 to point where we have a sorted list, and deduct from len_h2
 	sort_merge(ps, len_h1);
 	if (merge_already_sorted(ps, n))
 		return ;
 	input_rotate_recurring(ps, "OFFSET");
 	ps->k = ps->num_elements_b;
-	if ((num_already_sorted(ps, n) > len_h1))
-	{
-		len_h1 = num_already_sorted(ps, n);
-		len_h2 = n - len_h1;
-	}
-	op_pb_n_custom_1(ps, &len_h1, &len_h2);
+	op_pb_n_custom_1(ps, &len_h1, &len_h2, &n);
 	sort_merge(ps, len_h2);
 	input_rotate_recurring(ps, "OFFSET");
-	print_push_swap(ps);
 	ps->i = 0;
 	ps->j = 0;
 	if (merge_shortcut(ps, len_h1, len_h2))
 		return ;
+	if (!ps->pile_a)
+		return ;
 	merge(ps, len_h1, len_h2);
 	input_rotate_recurring(ps, "OFFSET");
+	if (!ps->pile_a)
+		return ;
 	op_rra_n_custom_2(ps);
 }

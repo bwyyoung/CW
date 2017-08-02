@@ -87,7 +87,8 @@ t_bool				op_pa_n(t_push_swap *ps, int n);
 t_bool				op_pa_n_custom_1(t_push_swap *ps, int n, int m);
 t_bool				op_pb(t_push_swap *ps);
 t_bool				op_pb_n(t_push_swap *ps, int n);
-t_bool				op_pb_n_custom_1(t_push_swap *ps, int *n, int *m);
+t_bool				op_pb_n_custom_1(t_push_swap *ps, int *len_h1, int *len_h2,
+					int *n);
 t_bool				op_pb_n_custom_2(t_push_swap *ps, int n);
 t_bool				op_ra(t_push_swap *ps);
 t_bool				op_ra_n(t_push_swap *ps, int n);

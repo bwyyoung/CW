@@ -50,20 +50,26 @@ t_bool		op_pb_n(t_push_swap *ps, int n)
 	return (true);
 }
 
-t_bool		op_pb_n_custom_1(t_push_swap *ps, int *n, int *m)
+t_bool		op_pb_n_custom_1(t_push_swap *ps, int *len_h1, int *len_h2, int *n)
 {
+	ps->l = num_already_sorted(ps, *n);
+	if ((ps->l  > *len_h1) && (ps->l < ps->num_elements_a))
+	{
+		*len_h1 = ps->l ;
+		*len_h2 = *n - *len_h1;
+	}
 	ps->k = ps->num_elements_b;
-	ps->i = *n;
-	ps->j = *m;
-	while (ps->i-- > 0 && *m >= 0)
+	ps->i = *len_h1;
+	ps->j = *len_h2;
+	while (ps->i-- > 0 && *len_h2 >= 0)
 	{
 		while (ps->pile_a && ps->pile_b && (ps->num_elements_a >= 2) &&
 			(ps->pile_a->num > ps->pile_a->bottom->num) &&
-				(ps->pile_b->num < ps->pile_a->bottom->num) && (*m > 1))
+				(ps->pile_b->num < ps->pile_a->bottom->num) && (*len_h2 > 1))
 		{
 			op_rra_n(ps, 1);
-			*n = *n + 1;
-			*m = *m - 1;
+			*len_h1 = *len_h1 + 1;
+			*len_h2 = *len_h2 - 1;
 			ps->i++;
 		}
 		input_rotate_recurring(ps, "OFFSET");

@@ -57,10 +57,7 @@ t_bool		op_pa_n_custom_1(t_push_swap *ps, int n, int m)
 		while (ps->pile_b && ps->pile_a &&
 		(ps->pile_a->num > ps->pile_a->bottom->num) &&
 		(ps->pile_b->num < ps->pile_a->bottom->num))
-		{
-			ps_verbose(ps, "op_pa_n_custom_1 rra \n");
 			op_rra_n(ps, 1);
-		}
 		op_pa_n(ps, 1);
 	}
 	return (true);
