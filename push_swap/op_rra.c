@@ -43,30 +43,22 @@ t_bool		op_rra_n(t_push_swap *ps, int n)
 	return (true);
 }
 
-t_bool		op_rra_n_custom_1(t_push_swap *ps, int *n, int *m)
+t_bool		op_rra_n_custom_1(t_push_swap *ps)
 {
-	if (*n + *m != ps->num_elements_a)
+	if (!ps->pile_a)
 		return (false);
 	while ((ps->num_elements_a >= 2)
-		&& (ps->pile_a->num > ps->pile_a->bottom->num)
-		   && (*m < ps->num_elements_a))
-	{
+		&& (ps->pile_a->num > ps->pile_a->bottom->num))
 		op_rra_n(ps, 1);
-		*m = *m + 1;
-		//*n = *n + 1;
-		/*if (ps->i >= ps->num_elements_a)
-		{
-			op_ra_n(ps, ps->num_elements_a);
-			break;
-		}*/
-	}
 	input_rotate_recurring(ps, "OFFSET");
 	return (true);
 }
 
-t_bool		op_rra_n_custom_2(t_push_swap *ps, int *n, int *m)
+t_bool		op_rra_n_custom_2(t_push_swap *ps)
 {
-	if (*n + *m != ps->num_elements_a)
+	if (ps->pile_a && !ps->pile_b)
+		return (op_rra_n_custom_1(ps));
+	if (!ps->pile_a || !ps->pile_b)
 		return (false);
 	ps->i = 0;
 	while ((ps->num_elements_a >= 2) && (ps->num_elements_b >= 1)
@@ -74,10 +66,10 @@ t_bool		op_rra_n_custom_2(t_push_swap *ps, int *n, int *m)
 		&& (ps->pile_b->num < ps->pile_a->bottom->num))
 	{
 		op_rra_n(ps, 1);
-		//*m = *m + 1;
 		ps->i++;
 		if (ps->i >= ps->num_elements_a)
 		{
+			input_rotate_recurring(ps, "OFFSET");
 			op_ra_n(ps, ps->num_elements_a);
 			break;
 		}

@@ -41,7 +41,8 @@ SRC_COMMON		=	op_pa.c			\
 					op_ss.c			\
 					input.c			\
 					input_verify.c	\
-					push_swap.c
+					push_swap.c		\
+					delete.c
 
 
 OBJ_CHECKER		=	$(SRC_CHECKER:.c=.o) #interesting compilation method

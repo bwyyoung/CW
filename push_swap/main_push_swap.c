@@ -27,9 +27,15 @@ int		main(int argc, char **argv)
 	if (!verify_input(data, argv))
 		return (delete_push_swap(data, true));
 	sort_merge(data, data->num_elements);
+	data->tmp_num = data->op_list;
+	while (data->tmp_num)
+	{
+		ft_printf("%s\n", data->tmp_num->op);
+		data->tmp_num = data->tmp_num->next;
+	}
 	data->verbose = true;
-	print_push_swap_2(data);
-
+	ft_printf("./push_swap arg |%s|\n", argv[1]);
+	print_push_swap(data);
 	delete_push_swap(data, false);
 
 	return (0);

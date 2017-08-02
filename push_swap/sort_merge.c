@@ -14,16 +14,14 @@
 
 t_bool		merge_shortcut(t_push_swap *ps, int len_h1, int len_h2)
 {
-	if (ps->pile_a && ps->pile_b && ps->pile_a->num >= ps->pile_b->num)
-		return (op_pa_n(ps, len_h1));
+	if (ps->pile_a && ps->pile_b && ps->pile_a->num > ps->pile_b->num)
+	{
+		op_pa_n(ps, len_h1);
+		return (true);
+	}
 	if (len_h2 < ps->num_elements_a)
 	{
-		//while (ps->pile_a && ps->pile_a->next &&
-			//	(ps->pile_a->num < ps->pile_a->next->num))
-	//	if (len_h2 < ps->num_elements_a / 2)
-			op_ra_n(ps, len_h2);
-	//	else
-	//		op_rra_n(ps, ps->num_elements_a - len_h2);
+		op_ra_n(ps, len_h2);
 		input_rotate_recurring(ps, "OFFSET");
 	}
 	return (false);
@@ -43,7 +41,7 @@ t_bool		merge_shortcut_small(t_push_swap *ps, int n)
 		op_sa_n(ps, 1);
 		op_rra_n(ps ,1);
 		if ((ps->pile_a && ps->pile_a->next)
-			&& ps->pile_a->num > ps->pile_a->next->num)
+			&& (ps->pile_a->num > ps->pile_a->next->num))
 			op_sa_n(ps, 1);
 	}
 	if (merge_already_sorted(ps, n))
@@ -70,8 +68,7 @@ void		merge(t_push_swap *ps, int len_h1, int len_h2)
 	while (++ps->j < len_h2)
 		op_rra_n(ps, 1);
 	input_rotate_recurring(ps, "OFFSET");
-	while (++ps->i < len_h1)
-		op_pa_n(ps, 1);
+	op_pa_n_custom_1(ps, ps->i, len_h1);
 }
 
 t_bool		calc_merge_half(t_push_swap *ps, int *n, int *len_h1, int *len_h2)
@@ -97,40 +94,18 @@ void		sort_merge(t_push_swap *ps, int n)
 	int		len_h1;
 	int		len_h2;
 
-	if (merge_already_sorted(ps, n))
+	if (merge_already_sorted(ps, n) ||
+		!calc_merge_half(ps, &n, &len_h1, &len_h2) ||
+		merge_shortcut_small(ps, n))
 		return ;
-	if (!calc_merge_half(ps, &n, &len_h1, &len_h2))
-		return ;
-	if (merge_shortcut_small(ps, n))
-		return ;
-
+	op_rra_n_custom_2(ps);
 	sort_merge(ps, len_h1);
 	if (merge_already_sorted(ps, n))
 		return ;
-	if (n < ps->num_elements / 2)
-	while (ps->pile_a && (ps->pile_a->num > ps->pile_a->bottom->num))
-	{
-		op_rra_n(ps, 1);
-		len_h1++;
-	}
 	input_rotate_recurring(ps, "OFFSET");
 	ps->k = ps->num_elements_b;
 	op_pb_n_custom_1(ps, &len_h1, &len_h2);
-
-/*	if (n < ps->num_elements / 2)
-		while (ps->pile_b && (ps->pile_b->num < ps->pile_b->bottom->num))
-		{
-			op_rrb_n(ps, 1);
-			len_h1++;
-		}
-*/
 	sort_merge(ps, len_h2);
-	if (n < ps->num_elements / 2)
-	while (ps->pile_a && (ps->pile_a->num > ps->pile_a->bottom->num))
-	{
-		op_rra_n(ps, 1);
-		len_h2++;
-	}
 	input_rotate_recurring(ps, "OFFSET");
 	print_push_swap(ps);
 	ps->i = 0;
@@ -138,10 +113,6 @@ void		sort_merge(t_push_swap *ps, int n)
 	if (merge_shortcut(ps, len_h1, len_h2))
 		return ;
 	merge(ps, len_h1, len_h2);
-	if (n < ps->num_elements / 2)
-	while (ps->pile_a && (ps->pile_a->num > ps->pile_a->bottom->num))
-	{
-		op_rra_n(ps, 1);
-	}
 	input_rotate_recurring(ps, "OFFSET");
+	op_rra_n_custom_2(ps);
 }

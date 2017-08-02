@@ -1,0 +1,55 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   delete.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: byoung-w <byoung-w@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/05/17 09:51:46 by tattali           #+#    #+#             */
+/*   Updated: 2017/05/17 09:51:46 by tattali          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
+
+void				delete_struct_arrays(t_push_swap *ps)
+{
+	while (ps->op_list)
+	{
+		ps->i++;
+		ps->tmp_num = ps->op_list;
+		ps->op_list = ps->op_list->next;
+		SAFE_DELETE(ps->tmp_num->op);
+		SAFE_DELETE(ps->tmp_num);
+	}
+	while (ps->pile_a)
+	{
+		ps->tmp_num = ps->pile_a;
+		ps->pile_a = ps->pile_a->next;
+		SAFE_DELETE(ps->tmp_num);
+	}
+	while (ps->pile_b)
+	{
+		ps->tmp_num = ps->pile_b;
+		ps->pile_b = ps->pile_b->next;
+		SAFE_DELETE(ps->tmp_num);
+	}
+	SAFE_DELETE(ps->arr_elements);
+	while ((ps->tmp_argv != NULL) && (--ps->num_elements + 1 >= 0))
+	{
+		SAFE_DELETE(ps->tmp_argv[ps->num_elements + 1]);
+	}
+}
+
+int					delete_push_swap(t_push_swap *ps, t_bool err)
+{
+	if (err)
+		ft_printf("Error\n");
+	if (!ps)
+		return (0);
+	delete_struct_arrays(ps);
+	SAFE_DELETE(ps->tmp_argv);
+	SAFE_DELETE(ps->buffer);
+	SAFE_DELETE(ps);
+	return (0);
+}

@@ -56,90 +56,34 @@ t_num				*init_num(int n, int index)
 	return (num);
 }
 
-int					print_push_swap_2(t_push_swap *ps)
-{
-	if (!DEBUG_PS && !ps->verbose)
-		return (0);
-	ps->tmp_num = ps->pile_a;
-	ft_putstr("--------------\nA: ");
-	while (ps->tmp_num)
-	{
-		ft_printf("%i | ", ps->tmp_num->num);
-		ps->tmp_num = ps->tmp_num->next;
-	}
-	ft_putstr("\nB: ");
-	ps->tmp_num = ps->pile_b;
-	while (ps->tmp_num)
-	{
-		ft_printf("%i | ", ps->tmp_num->num);
-		ps->tmp_num = ps->tmp_num->next;
-	}
-	ft_putstr("\n--------------\n");
-	return (0);
-}
-
 int					print_push_swap(t_push_swap *ps)
 {
 	if (!DEBUG_PS && !ps->verbose)
 		return (0);
 	ps->tmp_num = ps->pile_a;
-	ft_putstr("--------------\nA: ");
+	ft_putstr("--------------------------------------------------------\nA: ");
 	while (ps->tmp_num)
 	{
-		ft_printf("(%i)<- %i (%i)| ", (ps->tmp_num->prev ?
-		ps->tmp_num->prev->num : -999), ps->tmp_num->num,
-		ps->tmp_num->bottom->num);
+		ft_printf("%i | ", ps->tmp_num->num);
 		ps->tmp_num = ps->tmp_num->next;
 	}
 	ft_putstr("\nB: ");
 	ps->tmp_num = ps->pile_b;
 	while (ps->tmp_num)
 	{
-		ft_printf("(%i)<- %i (%i)| ", (ps->tmp_num->prev ?
-		ps->tmp_num->prev->num : -999), ps->tmp_num->num,
-		ps->tmp_num->bottom->num);
+		ft_printf("%i | ", ps->tmp_num->num);
 		ps->tmp_num = ps->tmp_num->next;
 	}
-	ft_putstr("\n--------------\n");
+	ps->k = 1;
+	ps->tmp_num = ps->op_list;
+	while (ps->tmp_num && ps->k++)
+		ps->tmp_num = ps->tmp_num->next;
+	ft_printf("\n-------(./push_swap) Total Ops: %i (%s)--------\n", ps->k - 1,
+	(merge_already_sorted(ps, ps->num_elements) ? "success" : "fail"));
 	return (0);
 }
 
-int					delete_push_swap(t_push_swap *ps, t_bool err)
-{
-	if (err)
-		ft_printf("Error\n");
-	if (!ps)
-		return (0);
-	while (ps->op_list)
-	{
-		ps->tmp_num = ps->op_list;
-		ps->op_list = ps->op_list->next;
-		(err ? 0 : ft_printf("%s\n", ps->tmp_num->op));
-		SAFE_DELETE(ps->tmp_num->op);
-		SAFE_DELETE(ps->tmp_num);
-	}
-	while (ps->pile_a)
-	{
-		ps->tmp_num = ps->pile_a;
-		ps->pile_a = ps->pile_a->next;
-		SAFE_DELETE(ps->tmp_num);
-	}
-	while (ps->pile_b)
-	{
-		ps->tmp_num = ps->pile_b;
-		ps->pile_b = ps->pile_b->next;
-		SAFE_DELETE(ps->tmp_num);
-	}
-	SAFE_DELETE(ps->arr_elements);
-	while ((ps->tmp_argv != NULL) && (--ps->num_elements + 1 >= 0))
-	{
-		SAFE_DELETE(ps->tmp_argv[ps->num_elements + 1]);
-	}
-	SAFE_DELETE(ps->tmp_argv);
-	SAFE_DELETE(ps->buffer);
-	SAFE_DELETE(ps);
-	return (0);
-}
+
 
 t_bool				merge_already_sorted(t_push_swap *ps, int n)
 {

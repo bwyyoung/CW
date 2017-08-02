@@ -61,9 +61,6 @@ int		input_rotate_recurring(t_push_swap *ps, char *op)
 				while (ps->k-- > 0)
 					input_op(ps, OP_RRA);
 			}
-		//	else if (!ft_strcmp(ps->op_list->bottom->op, OP_RA))
-		//		while (ps->k-- > 0)
-		//			input_op(ps, OP_RRA);
 		}
 		return (1);
 	}
