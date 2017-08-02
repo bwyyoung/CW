@@ -68,6 +68,7 @@ typedef struct		s_push_swap
 	int				j;
 	int				m;
 	int				k;
+	int				l;
 }					t_push_swap;
 
 t_push_swap			*init_push_swap();
@@ -95,8 +96,8 @@ t_bool				op_rb_n(t_push_swap *ps, int n);
 t_bool				op_rr(t_push_swap *ps);
 t_bool				op_rra(t_push_swap *ps);
 t_bool				op_rra_n(t_push_swap *ps, int n);
-t_bool				op_rra_n_custom_1(t_push_swap *ps);
-t_bool				op_rra_n_custom_2(t_push_swap *ps);
+int					op_rra_n_custom_1(t_push_swap *ps);
+int					op_rra_n_custom_2(t_push_swap *ps);
 t_bool				op_rrb(t_push_swap *ps);
 t_bool				op_rrb_n(t_push_swap *ps, int n);
 t_bool				op_rrb_custom_b(t_push_swap *ps);

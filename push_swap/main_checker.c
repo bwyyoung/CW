@@ -29,7 +29,7 @@ t_bool	input_loop_2(t_push_swap *ps)
 	else
 	{
 		ps_verbose(ps, "%s\n", ps->buffer);
-		if (!ps->verbose)
+		if (!ps_flag_mode(ps, ps->buffer))
 			return (false);
 	}
 	return (true);

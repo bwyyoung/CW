@@ -93,7 +93,6 @@ t_bool	parse_single_param_string(t_push_swap *ps, char **argv)
 	ps->i = 0;
 	while (ps->tmp_argv[++ps->i] != NULL)
 		ps->num_elements++;
-	ps->num_elements_a = ps->num_elements;
 	ps->i = 0;
 	return (true);
 }
@@ -109,8 +108,9 @@ void	parse_input(t_push_swap *ps, char **argv)
 		{
 			ps->pile_a = init_num(ft_atoi(argv[ps->i]), ps->i - 1);
 			ps->tmp_num = ps->pile_a;
-			ps->arr_elements[ps->i - 1] = ps->tmp_num->num;
+			ps->arr_elements[ps->num_elements_a] = ps->tmp_num->num;
 			ps->pile_a->bottom = ps->pile_a;
+			ps->num_elements_a++;
 			continue ;
 		}
 		ps->tmp_num->prev = init_num(ft_atoi(argv[ps->i]), ps->i - 1);
@@ -118,6 +118,8 @@ void	parse_input(t_push_swap *ps, char **argv)
 		ps->tmp_num = ps->tmp_num->prev;
 		ps->tmp_num->bottom = ps->tmp_num->next->bottom;
 		ps->pile_a = ps->tmp_num;
-		ps->arr_elements[ps->i - 1] = ps->tmp_num->num;
+		ps->arr_elements[ps->num_elements_a] = ps->tmp_num->num;
+		ps->num_elements_a++;
 	}
+	ps->num_elements = ps->num_elements_a;
 }
