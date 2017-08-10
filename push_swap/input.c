@@ -31,7 +31,7 @@ t_bool	input_op_check(t_push_swap *ps, char *op)
 
 t_bool	input_op(t_push_swap *ps, char *op)
 {
-	ps_verbose(ps, "input_op: %s\n", op);
+	ps_verbose(ps, "INPUT_OP: %s\n", op);
 	if (ps->check_mode)
 		return (false);
 	if (!ps->op_list)
@@ -57,7 +57,8 @@ t_bool	input_op(t_push_swap *ps, char *op)
 
 t_bool	verify_input(t_push_swap *ps, char **argv)
 {
-	if ((ps->num_elements == 1) && (ft_strstr(argv[1], " ") != NULL))
+	if ((ps->num_elements >= 1) && (ps->num_elements <= 2)
+	&& (ft_strstr(argv[1], " ") != NULL))
 	{
 		if (!parse_single_param_string(ps, argv))
 			return (false);
@@ -71,12 +72,14 @@ t_bool	verify_input(t_push_swap *ps, char **argv)
 		return (false);
 	parse_input(ps, argv);
 	ps->i = -1;
-	ps->j = -1;
 	while (++ps->i < ps->num_elements)
-		while(++ps->j < ps->num_elements)
+	{
+		ps->j = -1;
+		while (++ps->j < ps->num_elements)
 			if ((ps->i != ps->j) &&
-			(ps->arr_elements[ps->i] == ps->arr_elements[ps->j]))
+				(ps->arr_elements[ps->i] == ps->arr_elements[ps->j]))
 				return (false);
+	}
 	return (true);
 }
 
@@ -85,6 +88,8 @@ t_bool	parse_single_param_string(t_push_swap *ps, char **argv)
 	ps->buffer = ft_strjoin("0 ", argv[1]);
 	if (!ps->buffer)
 		return (false);
+	if (ps->num_elements == 2)
+		ps_flag_mode(ps, argv[2]);
 	ps->tmp_argv = ft_strsplit(ps->buffer, ' ');
 	SAFE_DELETE(ps->buffer);
 	if (!ps->tmp_argv)

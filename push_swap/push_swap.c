@@ -63,23 +63,22 @@ int					print_push_swap(t_push_swap *ps)
 	ps->tmp_num = ps->pile_a;
 	ft_putstr("--------------------------------------------------------\nA: ");
 	while (ps->tmp_num)
-	{
-		ft_printf("%i | ", ps->tmp_num->num);
-		ps->tmp_num = ps->tmp_num->next;
-	}
+		(ft_printf("%i | ", ps->tmp_num->num) ? ps->tmp_num = ps->tmp_num->next
+		: 0);
 	ft_putstr("\nB: ");
 	ps->tmp_num = ps->pile_b;
 	while (ps->tmp_num)
-	{
-		ft_printf("%i | ", ps->tmp_num->num);
-		ps->tmp_num = ps->tmp_num->next;
-	}
+		(ft_printf("%i | ", ps->tmp_num->num) ? ps->tmp_num = ps->tmp_num->next
+		: 0);
 	ps->k = 1;
 	ps->tmp_num = ps->op_list;
 	while (ps->tmp_num && ps->k++)
 		ps->tmp_num = ps->tmp_num->next;
-	ft_printf("\n-------(./push_swap) Total Ops: %i (%s)--------\n", ps->k - 1,
-	(merge_already_sorted(ps, ps->num_elements) ? "success" : "fail"));
+	if (!ps->check_mode)
+		ft_printf("\n-------(./push_swap) Total Ops: %i (%s)--------\n", ps->k
+		- 1, (merge_already_sorted(ps, ps->num_elements) ? "success" : "fail"));
+	else
+		ft_putstr("\n-------(./checker) Total Ops: ");
 	return (0);
 }
 
@@ -89,9 +88,9 @@ void				ps_verbose(t_push_swap *ps, char *string, ...)
 
 	if (!ps->verbose)
 		return ;
-	va_start( args, string);
+	va_start(args, string);
 	ft_vprintf(string, args);
-	va_end( args );
+	va_end(args);
 }
 
 t_bool				merge_already_sorted(t_push_swap *ps, int n)

@@ -21,7 +21,7 @@ static char		**create2dchararray(char **strings, int *elements, int l1)
 		return (NULL);
 	while (i < l1)
 	{
-		if (!(strings[i] = ft_strnew(elements[i])))
+		if (!(strings[i] = ft_strnew(elements[i] + 1)))
 			return (NULL);
 		i++;
 	}

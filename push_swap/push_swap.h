@@ -29,7 +29,7 @@
 # define OP_SA "sa"
 # define OP_SB "sb"
 # define OP_SS "ss"
-# define DEBUG_PS 1
+# define DEBUG_PS 0
 
 typedef enum
 {
@@ -57,6 +57,7 @@ typedef struct		s_push_swap
 	t_num			*pile_b;
 	t_num			*tmp_num;
 	t_num			*op_list;
+	int				num_argv;
 	int				num_elements;
 	int				num_elements_a;
 	int				num_elements_b;

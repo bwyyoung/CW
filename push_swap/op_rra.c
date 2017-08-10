@@ -75,7 +75,7 @@ int			op_rra_n_custom_2(t_push_swap *ps)
 		{
 			input_rotate_recurring(ps, "OFFSET");
 			op_ra_n(ps, ps->num_elements_a);
-			break;
+			break ;
 		}
 	}
 	return (ps->l);

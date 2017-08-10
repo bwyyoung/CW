@@ -12,20 +12,8 @@
 
 #include "push_swap.h"
 
-int		main(int argc, char **argv)
+int		begin_swap(char **argv, t_push_swap *data)
 {
-	t_push_swap		*data;
-
-	if (argc == 1)
-		return (0);
-	data = init_push_swap();
-	if (!data)
-		return (delete_push_swap(data, true));
-	data->num_elements = argc - 1;
-	data->check_mode = false;
-	ps_verbose(data, "./push_swap arg |%s|\n", argv[1]);
-	if (!verify_input(data, argv))
-		return (delete_push_swap(data, true));
 	sort_merge(data, data->num_elements);
 	data->tmp_num = data->op_list;
 	while (data->tmp_num)
@@ -39,4 +27,23 @@ int		main(int argc, char **argv)
 	print_push_swap(data);
 	delete_push_swap(data, false);
 	return (0);
+}
+
+int		main(int argc, char **argv)
+{
+	t_push_swap		*data;
+
+	if (argc == 1)
+		return (0);
+	data = init_push_swap();
+	if (!data)
+		return (delete_push_swap(data, true));
+	data->num_elements = argc - 1;
+	data->num_argv = argc;
+	data->check_mode = false;
+	if (!verify_input(data, argv))
+		return (delete_push_swap(data, true));
+	if (!data->num_elements)
+		return (delete_push_swap(data, false));
+	return (begin_swap(argv, data));
 }

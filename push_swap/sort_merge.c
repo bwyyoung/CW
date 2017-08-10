@@ -38,7 +38,7 @@ t_bool		merge_shortcut_small(t_push_swap *ps, int n)
 	{
 		op_ra_n(ps, 1);
 		op_sa_n(ps, 1);
-		op_rra_n(ps ,1);
+		op_rra_n(ps, 1);
 		if ((ps->pile_a && ps->pile_a->next)
 			&& (ps->pile_a->num > ps->pile_a->next->num))
 			op_sa_n(ps, 1);
@@ -87,9 +87,9 @@ t_bool		calc_merge_half(t_push_swap *ps, int *n, int *len_h1, int *len_h2)
 	*len_h1 = m;
 	*len_h2 = *n - m;
 	ps->l = num_already_sorted(ps, *n);
-	if ((ps->l  > *len_h1) && (ps->l < ps->num_elements_a))
+	if ((ps->l > *len_h1) && (ps->l < ps->num_elements_a))
 	{
-		*len_h1 = ps->l ;
+		*len_h1 = ps->l;
 		*len_h2 = *n - *len_h1;
 	}
 	return (true);
@@ -101,7 +101,7 @@ void		sort_merge(t_push_swap *ps, int n)
 	int		len_h2;
 
 	if (merge_already_sorted(ps, n) ||
-	 merge_shortcut_small(ps, n) || !calc_merge_half(ps, &n, &len_h1, &len_h2))
+	merge_shortcut_small(ps, n) || !calc_merge_half(ps, &n, &len_h1, &len_h2))
 		return ;
 	sort_merge(ps, len_h1);
 	if (merge_already_sorted(ps, n))

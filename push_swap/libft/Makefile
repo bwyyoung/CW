@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 NAME	=	libft.a
-CC		=	gcc
+CC		=	gcc -g
 ARRC	=	ar rc
 RANLIB	=	ranlib
 FLAGS	=	-Wall -Werror -Wextra -c
@@ -81,6 +81,7 @@ C_FILES	+= ft_lstmap.c
 C_FILES += ft_pow.c
 C_FILES += ft_sqrt.c
 C_FILES += ft_strrev.c
+C_FILES += get_next_line.c
 
 O_FILES	= ft_atoi.o
 O_FILES	+= ft_error.o
@@ -147,6 +148,7 @@ O_FILES	+= ft_lstmap.o
 O_FILES += ft_pow.o
 O_FILES += ft_sqrt.o
 O_FILES += ft_strrev.o
+O_FILES += get_next_line.o
 
 all		: $(NAME)
 

@@ -17,7 +17,7 @@ int			ft_isint(char const *p)
 	int		i;
 	char	*str;
 
-	if (!p)
+	if (!p || (p[0] == '\0'))
 		return (0);
 	i = ft_atoi(p);
 	str = ft_itoa(i);

@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-t_bool		input_delete_redundancy(t_push_swap *ps)
+t_bool	input_delete_redundancy(t_push_swap *ps)
 {
 	SAFE_DELETE(ps->op_list->bottom->op);
 	if (!ps->op_list->next)
@@ -39,28 +39,27 @@ int		input_rotate_recurring(t_push_swap *ps, char *op)
 {
 	if (ps->check_mode || !ps->op_list)
 		return (1);
-	if (ft_strcmp(ps->op_list->bottom->op, op))
-		if ((ps->num_elements_a > 1) && (bottom_is_rotate(ps))
-			&& ((ps->num_elements_a -
-		ps->op_list->bottom->num) < ps->op_list->bottom->num))
+	if (ft_strcmp(ps->op_list->bottom->op, op) && ((ps->num_elements_a > 1)
+		&& (bottom_is_rotate(ps)) && ((ps->num_elements_a
+		- ps->op_list->bottom->num) < ps->op_list->bottom->num)))
+	{
+		ps->m = ps->op_list->bottom->num;
+		ps->k = ps->num_elements_a - ps->op_list->bottom->num;
+		if (!ft_strcmp(ps->op_list->bottom->op, OP_RRA))
 		{
-			ps->m = ps->op_list->bottom->num;
-			ps->k = ps->num_elements_a - ps->op_list->bottom->num;
-			if (!ft_strcmp(ps->op_list->bottom->op, OP_RRA))
-			{
-				while (ps->op_list && !ft_strcmp(ps->op_list->bottom->op, OP_RRA))
-					input_delete_redundancy(ps);
-				while (ps->k-- > 0)
-						input_op(ps, OP_RA);
-			}
-			else if (!ft_strcmp(ps->op_list->bottom->op, OP_RA))
-			{
-				while (ps->op_list && !ft_strcmp(ps->op_list->bottom->op, OP_RA))
-					input_delete_redundancy(ps);
-				while (ps->k-- > 0)
-					input_op(ps, OP_RRA);
-			}
+			while (ps->op_list && !ft_strcmp(ps->op_list->bottom->op, OP_RRA))
+				input_delete_redundancy(ps);
+			while (ps->k-- > 0)
+				input_op(ps, OP_RA);
 		}
+		else if (!ft_strcmp(ps->op_list->bottom->op, OP_RA))
+		{
+			while (ps->op_list && !ft_strcmp(ps->op_list->bottom->op, OP_RA))
+				input_delete_redundancy(ps);
+			while (ps->k-- > 0)
+				input_op(ps, OP_RRA);
+		}
+	}
 	return (1);
 }
 

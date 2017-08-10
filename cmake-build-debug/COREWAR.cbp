@@ -17,21 +17,21 @@
 					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -45,13 +45,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/Cellar/llvm/3.9.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/usr/local/Cellar/llvm/3.9.1/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 COREWAR"/>
@@ -68,13 +68,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/Cellar/llvm/3.9.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/usr/local/Cellar/llvm/3.9.1/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/cmake-build-debug/Makefile&quot;  VERBOSE=1 COREWAR/fast"/>
@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/delete.c">
+			<Option target="COREWAR"/>
+		</Unit>
 		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/ft_printf/add_final_padding.c">
 			<Option target="COREWAR"/>
 		</Unit>
@@ -189,6 +192,9 @@
 		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/input.c">
 			<Option target="COREWAR"/>
 		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/input_verify.c">
+			<Option target="COREWAR"/>
+		</Unit>
 		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_atoi.c">
 			<Option target="COREWAR"/>
 		</Unit>
@@ -208,6 +214,9 @@
 			<Option target="COREWAR"/>
 		</Unit>
 		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isdigit.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isint.c">
 			<Option target="COREWAR"/>
 		</Unit>
 		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/libft/ft_isprint.c">
@@ -427,6 +436,12 @@
 			<Option target="COREWAR"/>
 		</Unit>
 		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/push_swap.h">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/sort_counting.c">
+			<Option target="COREWAR"/>
+		</Unit>
+		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/push_swap/sort_merge.c">
 			<Option target="COREWAR"/>
 		</Unit>
 		<Unit filename="/Volumes/SD_CACHE/dropbox_gmail/Dropbox/42_LOCAL/Documents/ANNEE_2/COREWAR/CMakeLists.txt">

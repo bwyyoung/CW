@@ -37,7 +37,7 @@ t_bool	input_loop_2(t_push_swap *ps)
 
 t_bool	input_loop(t_push_swap *ps)
 {
-	int i = 1;
+	ps->l = 1;
 	while (get_next_line(0, &ps->buffer) > 0)
 	{
 		if (!ft_strcmp(ps->buffer, OP_PA))
@@ -53,7 +53,7 @@ t_bool	input_loop(t_push_swap *ps)
 		else if (!input_loop_2(ps))
 			return (false);
 		SAFE_DELETE(ps->buffer);
-		ps_verbose(ps, "input_loop %i\n", i++);
+		ps_verbose(ps, " %i -------------------------------\n", ps->l++);
 	}
 	return (true);
 }
@@ -77,16 +77,19 @@ int		main(int argc, char **argv)
 		return (delete_push_swap(data, true));
 	data->echo = false;
 	data->num_elements = argc - 1;
-	data->num_elements_a = argc - 1;
+	data->num_argv = argc;
 	data->check_mode = true;
 	if (!verify_input(data, argv))
 		return (delete_push_swap(data, true));
+	if (!data->num_elements)
+		return (delete_push_swap(data, false));
 	if (DEBUG_PS)
 		data->verbose = true;
 	if (!input_loop(data))
 		return (delete_push_swap(data, true));
 	check_solved(data);
-	ps_verbose(data, "checker 8 %i | %s\n", argc - 1, argv[1]);
+	ps_verbose(data, "checker params - argc: %i \
+	\nnumbers: %s\n", argc - 1, argv[1]);
 	delete_push_swap(data, false);
 	return (0);
 }

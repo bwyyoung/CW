@@ -53,9 +53,9 @@ t_bool		op_pb_n(t_push_swap *ps, int n)
 t_bool		op_pb_n_custom_1(t_push_swap *ps, int *len_h1, int *len_h2, int *n)
 {
 	ps->l = num_already_sorted(ps, *n);
-	if ((ps->l  > *len_h1) && (ps->l < ps->num_elements_a))
+	if ((ps->l > *len_h1) && (ps->l < ps->num_elements_a))
 	{
-		*len_h1 = ps->l ;
+		*len_h1 = ps->l;
 		*len_h2 = *n - *len_h1;
 	}
 	ps->k = ps->num_elements_b;

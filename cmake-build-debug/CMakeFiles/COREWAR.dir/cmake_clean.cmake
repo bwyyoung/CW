@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/COREWAR.dir/push_swap/delete.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/ft_printf/add_final_padding.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/ft_printf/add_precision_padding.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/ft_printf/ft_basetoa.c.o"
@@ -33,6 +34,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COREWAR.dir/push_swap/ft_printf/validate_flags.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/ft_printf/validate_flags_ignored.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/input.c.o"
+  "CMakeFiles/COREWAR.dir/push_swap/input_verify.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_atoi.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_bzero.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_error.c.o"
@@ -40,6 +42,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_isalpha.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_isascii.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_isdigit.c.o"
+  "CMakeFiles/COREWAR.dir/push_swap/libft/ft_isint.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_isprint.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_itoa.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/libft/ft_lstadd.c.o"
@@ -110,6 +113,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/COREWAR.dir/push_swap/op_sb.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/op_ss.c.o"
   "CMakeFiles/COREWAR.dir/push_swap/push_swap.c.o"
+  "CMakeFiles/COREWAR.dir/push_swap/sort_counting.c.o"
+  "CMakeFiles/COREWAR.dir/push_swap/sort_merge.c.o"
   "COREWAR.pdb"
   "COREWAR"
 )

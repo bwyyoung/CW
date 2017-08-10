@@ -77,7 +77,6 @@ static int		findnewline(char *buffer, t_llist **curlist, int res)
 {
 	char	*temp;
 
-	buffer[res] = '\0';
 	if ((*curlist)->spill != NULL)
 	{
 		(*curlist)->data = ft_strdup((*curlist)->spill);
@@ -86,6 +85,7 @@ static int		findnewline(char *buffer, t_llist **curlist, int res)
 	}
 	if (buffer != NULL)
 	{
+		buffer[res] = '\0';
 		if ((*curlist)->data != NULL)
 		{
 			if (!(temp = ft_strjoin((*curlist)->data, buffer)))
@@ -112,7 +112,7 @@ int				get_next_line(int const fd, char **line)
 	if (!line || (clist == NULL))
 		return (-1);
 	*line = NULL;
-	while ((clist->spill != NULL) || (res = read(fd, buff, BUFF_SIZE)) > 0)
+	while (((res = read(fd, buff, BUFF_SIZE)) > 0) || (clist->spill != NULL))
 	{
 		if (res == -1)
 			return (-1);

@@ -16,7 +16,6 @@ void				delete_struct_arrays(t_push_swap *ps)
 {
 	while (ps->op_list)
 	{
-		ps->i++;
 		ps->tmp_num = ps->op_list;
 		ps->op_list = ps->op_list->next;
 		SAFE_DELETE(ps->tmp_num->op);
@@ -34,10 +33,10 @@ void				delete_struct_arrays(t_push_swap *ps)
 		ps->pile_b = ps->pile_b->next;
 		SAFE_DELETE(ps->tmp_num);
 	}
-	SAFE_DELETE(ps->arr_elements);
-	while ((ps->tmp_argv != NULL) && (--ps->num_elements + 1 >= 0))
+	ps->i = -1;
+	while ((ps->tmp_argv != NULL) && (ps->tmp_argv[++ps->i] != NULL))
 	{
-		SAFE_DELETE(ps->tmp_argv[ps->num_elements + 1]);
+		SAFE_DELETE(ps->tmp_argv[ps->i]);
 	}
 }
 
@@ -48,6 +47,7 @@ int					delete_push_swap(t_push_swap *ps, t_bool err)
 	if (!ps)
 		return (0);
 	delete_struct_arrays(ps);
+	SAFE_DELETE(ps->arr_elements);
 	SAFE_DELETE(ps->tmp_argv);
 	SAFE_DELETE(ps->buffer);
 	SAFE_DELETE(ps);

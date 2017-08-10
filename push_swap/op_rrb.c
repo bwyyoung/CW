@@ -47,7 +47,7 @@ t_bool		op_rrb_custom_b(t_push_swap *ps)
 {
 	if (!ps->pile_b || !ps->pile_a)
 		return (false);
-	if  (ps->pile_b->bottom->num < ps->pile_a->num)
+	if (ps->pile_b->bottom->num < ps->pile_a->num)
 		if (ps->pile_b->bottom->num > ps->pile_b->num)
 		{
 			op_rrb_n(ps, 1);
@@ -55,7 +55,6 @@ t_bool		op_rrb_custom_b(t_push_swap *ps)
 		}
 	return (true);
 }
-
 
 t_bool		op_rrb_custom_a(t_push_swap *ps)
 {
