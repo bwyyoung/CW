@@ -112,20 +112,19 @@ int				get_next_line(int const fd, char **line)
 	if (!line || (clist == NULL))
 		return (-1);
 	*line = NULL;
-	while (((res = read(fd, buff, BUFF_SIZE)) > 0) || (clist->spill != NULL))
+	while ((((res = read(fd, buff, BUFF_SIZE)) > 0)) || (clist->spill != NULL))
 	{
-		if (res == -1)
-			return (-1);
+		if (res == -1 || ((res == 0 && !ft_strlen(clist->spill))))
+		{
+			SAFE_DELETE_GNL(-1, buff);
+		}
 		res = findnewline(buff, &clist, res);
 		*line = clist->data;
-		if (res == 1 || res == -1)
-		{
-			free(buff);
-			return (res);
-		}
+		if (res != 1 && res != -1)
+			continue ;
+		SAFE_DELETE_GNL(res, buff);
 	}
 	if (*line == NULL)
 		*line = ft_memalloc(1);
-	free(buff);
-	return (res);
+	SAFE_DELETE_GNL(res, buff);
 }
