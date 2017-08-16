@@ -15,7 +15,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# define BUFF_SIZE 9999999
+# define BUFF_SIZE 3
 # define NEWLINE 10
 # define SAFE_DELETE_GNL(b, a) if((a) != NULL){free(a); (a) = NULL;} return (b);
 

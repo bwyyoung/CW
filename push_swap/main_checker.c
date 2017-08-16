@@ -40,9 +40,6 @@ t_bool	input_loop(t_push_swap *ps)
 	ps->l = 1;
 	while (get_next_line(0, &ps->buffer) > 0)
 	{
-		ft_printf("input loop %s \n", ps->buffer);
-		//SAFE_DELETE(ps->buffer);
-		//continue ;
 		if (!ft_strcmp(ps->buffer, OP_PA))
 			op_pa_n(ps, 1);
 		else if (!ft_strcmp(ps->buffer, OP_PB))
