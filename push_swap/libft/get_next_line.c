@@ -15,7 +15,6 @@
 #include <time.h>
 #include <stdio.h>
 
-
 static void		ft_llist_push_front(t_llist **begin_list, void *data, int fd)
 {
 	t_llist		*mlist;
