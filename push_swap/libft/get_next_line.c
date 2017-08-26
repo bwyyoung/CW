@@ -12,8 +12,6 @@
 
 #include "get_next_line.h"
 #include "libft.h"
-#include <time.h>
-#include <stdio.h>
 
 static void		ft_llist_push_front(t_llist **begin_list, void *data, int fd)
 {
@@ -39,7 +37,6 @@ t_llist			*ft_llist_find(t_llist **begin_list, int fd, char **buffer)
 	t_llist		*list_ptr;
 
 	list_ptr = *begin_list;
-
 	if (!(*buffer = (char *)ft_memalloc(BUFF_SIZE + 1)))
 		return (NULL);
 	if (*begin_list == NULL)
