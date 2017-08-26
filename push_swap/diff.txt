@@ -1,0 +1,5384 @@
+diff --git a/push_swap/checker b/push_swap/checker
+index 25404fe..d3ecf05 100755
+Binary files a/push_swap/checker and b/push_swap/checker differ
+diff --git a/push_swap/correction/20170723/push_swap_500.txt b/push_swap/correction/20170723/push_swap_500.txt
+index 8bdd181..fb92555 100644
+--- a/push_swap/correction/20170723/push_swap_500.txt
++++ b/push_swap/correction/20170723/push_swap_500.txt
+@@ -103,8 +103,6 @@ ra
+ pa
+ rra
+ rra
+-rrb
+-pa
+ pa
+ rra
+ pb
+@@ -117,38 +115,42 @@ rra
+ rra
+ pb
+ pb
+-pb
+-pb
+ rra
++pa
++pa
+ rra
+ pb
+-rrb
+-pa
+ rra
+-pa
+-ra
+-ra
++pb
++pb
++pb
++pb
+ ra
++sa
++rra
++sa
+ ra
+ pa
++pa
+ rra
+ pa
+ pa
+ pa
+ ra
++ra
++ra
++ra
++ra
+ pa
++rra
+ pa
+ pa
+ rra
+-rrb
+ pa
+ rra
+ pa
+ pa
+ pa
+-pa
+-ra
+-ra
+ ra
+ ra
+ ra
+@@ -176,19 +178,19 @@ pa
+ pa
+ pa
+ rra
+-pa
+ rra
+ pa
+ rra
++pa
+ rra
++pa
++pa
++pa
+ rra
+ rra
+ rra
+ rra
+ rra
+-rra
+-rra
+-pb
+ pb
+ pb
+ pb
+@@ -217,27 +219,23 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+ sa
++ra
++sa
+ rra
+ sa
+ pb
+ pb
+ pb
+ pb
+-pb
+ sa
+ pa
+-pa
+-ra
+ ra
+ pa
+ pa
+-pa
+-rra
+ rra
+ pb
+ pb
+@@ -246,37 +244,38 @@ pb
+ pb
+ pb
+ pb
+-sa
+ pb
+-sa
+ pb
+ pb
++sa
+ pb
+-rra
+-rra
+ pb
+-rra
+-pa
+ ra
+ ra
++pa
++pa
++ra
+ ra
+ pa
+-rra
+ pa
+ rra
++rra
+ pa
+ pa
+ ra
+ ra
++ra
++ra
+ pa
+ pa
+-pa
+-rra
+ rra
+ pa
++rra
+ pa
+-pa
+ rra
++rra
++rra
++pa
+ pa
+ rra
+ pb
+@@ -292,80 +291,73 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+-sa
+-ra
+-sa
+ rra
+-sa
+-pb
++pa
++rra
+ pb
++rra
+ pb
+ pb
+ pb
++sa
+ ra
+ pa
+ pa
+-ra
+-ra
+-ra
+ pa
+ rra
+ pa
+-pa
+-rra
+-rra
+ rra
+ pb
+ pb
+ pb
++rra
++pb
+ pb
+ pb
+ pb
+-sa
+ pb
+-sa
+-ra
+ sa
+ rra
+-sa
+-pb
+ pb
+-pb
+-rra
+-rra
+ rra
+ pb
+ pb
+-rra
+-rra
+-pa
++pb
++sa
+ pa
+ ra
+ ra
+ ra
+ ra
+ pa
+-rra
+ pa
+ rra
++rra
++rra
++rra
+ pa
+ ra
+ ra
+ ra
+ ra
++ra
++ra
++pa
+ pa
+ pa
+-rra
+ pa
+ rra
++rra
+ pa
+ pa
+ rra
+ pa
++pa
++rra
++rra
+ rra
+ pa
+ ra
+@@ -377,8 +369,22 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
++ra
++ra
++ra
++ra
++pa
++rra
++rra
++rra
+ pa
++rra
++rra
++rra
+ pa
++rra
+ pa
+ pa
+ pa
+@@ -386,21 +392,36 @@ rra
+ pa
+ rra
+ pa
+-rra
+-rra
+ pa
+ pa
++rra
+ pa
+ pa
+-rra
+ pa
+ pa
+ rra
+ rra
+-pa
+ rra
+ pa
+-pa
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
+ ra
+ ra
+ ra
+@@ -409,28 +430,46 @@ ra
+ ra
+ ra
+ pa
++rra
+ pa
++rra
++rra
+ pa
+ pa
++rra
+ pa
++rra
++rra
++rra
+ pa
+ pa
+ pa
++rra
++rra
++rra
++rra
++rra
++rra
++rra
++rra
++rra
+ pa
++rra
+ pa
+ pa
+ pa
+ pa
++rra
+ pa
+ pa
+ pa
+-pa
++rra
++rra
+ pa
+ pa
+ pa
+ rra
+ pa
+-rra
+ pa
+ rra
+ pa
+@@ -439,6 +478,7 @@ pa
+ rra
+ pa
+ rra
++rra
+ pa
+ pa
+ rra
+@@ -446,9 +486,6 @@ rra
+ pa
+ pa
+ rra
+-pa
+-rra
+-rra
+ pb
+ pb
+ pb
+@@ -485,7 +522,6 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+@@ -500,38 +536,29 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+ pb
+ pb
+ pb
+-rra
+-pb
+ pb
+ pb
+ pb
+ pb
+-pb
+-pb
+-pb
+-rra
+-rra
++ra
+ sa
+ rra
+ pb
+-sa
+ pb
+ pb
+-rra
+-rra
+ pb
+-rra
+-pa
++pb
++sa
+ ra
+ pa
+-rra
++pa
++pa
+ pa
+ rra
+ pb
+@@ -542,28 +569,32 @@ pb
+ pb
+ rra
+ rra
+-pb
+ rra
+ pb
+-rra
+ pb
++rra
++rra
+ pb
+ pb
+ rra
+-sa
+ rra
+ pb
++pb
++rra
+ rra
+-pa
+-ra
+-ra
+-pa
+ pa
+ pa
++ra
+ pa
+ rra
+ rra
+ pa
++rra
++pa
++pa
++ra
++ra
++ra
+ ra
+ ra
+ ra
+@@ -571,17 +602,19 @@ ra
+ ra
+ pa
+ pa
+-rra
+ pa
+-rra
+ pa
+ rra
++rra
++rra
+ pa
+ pa
++rra
+ pa
+ rra
+ rra
+-pb
++rra
++rra
+ pb
+ pb
+ pb
+@@ -598,60 +631,73 @@ pb
+ pb
+ pb
+ pb
+-ra
++pb
+ sa
+ rra
+-sa
+-pb
+-pb
+ pb
+ rra
++pa
+ rra
+ pb
++pb
++pb
++sa
++pb
++pb
+ rra
+ pa
+-ra
++pa
+ ra
+ pa
+ rra
++pa
++pa
+ rra
+ pb
+ pb
++pb
+ rra
+ pb
+ pb
++rra
+ pb
+ pb
+-ra
++pb
++pb
++rra
+ sa
+ rra
+ pb
++rra
+ pb
+ pb
+-rra
++ra
+ sa
+ rra
+-pb
+ sa
+-pa
++ra
+ ra
+ pa
+ pa
+ rra
++rra
+ pa
+ ra
+ ra
+ ra
++ra
++pa
+ pa
+ pa
+ pa
+-rra
+ pa
+ pa
+ pa
+ rra
+ rra
+ pa
++rra
++rra
+ pa
+ ra
+ ra
+@@ -665,36 +711,32 @@ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+ pa
+ pa
+ pa
+-rra
+-rra
+-rra
+-rra
++pa
+ pa
+ rra
+ pa
+ pa
+-rra
+ pa
+ rra
+-pa
+ rra
+ pa
+ rra
+ pa
+-pa
++rra
+ rra
+ rra
+ pa
++pa
+ rra
+ rra
+ pa
+ pa
+ rra
++rra
++rra
+ pb
+ pb
+ pb
+@@ -713,40 +755,31 @@ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
++rra
+ pb
+ pb
+ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+-sa
+-rra
+ pb
+-rra
+ pb
+ sa
+-pb
++ra
+ sa
++rra
+ pb
+ pb
+-rra
+-pa
+-rra
+-pa
+-ra
+-ra
+-pa
+-pa
+-rra
+-rra
+ pb
++rra
+ pb
++sa
+ rra
+ pb
+ pb
+@@ -754,44 +787,32 @@ pb
+ pb
+ pb
+ rra
+-sa
+-rra
+-pb
+-rra
+-rra
+-pa
+-rra
+-rra
+-pb
+ pb
++sa
+ pb
+-rra
+ sa
+-rra
+ pb
+ sa
+ pa
+ ra
+ pa
+ pa
++rra
++pa
+ pa
+ ra
+ ra
+ ra
+ ra
+-ra
+-pa
+ pa
++rra
+ pa
++rra
+ pa
++rra
+ pa
+ pa
+ pa
+-rra
+-rra
+-rra
+-rra
+-rra
+ pa
+ rra
+ pb
+@@ -802,7 +823,6 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+@@ -810,27 +830,29 @@ pb
+ pb
+ pb
+ pb
++ra
+ sa
+ rra
+ pb
+-rra
+-rra
+-rra
+-pa
+-rra
+-rra
+-pb
++sa
+ pb
++sa
+ pb
++sa
+ pb
+ pb
+-rra
++sa
++ra
+ pa
++rra
+ pa
++ra
++ra
+ pa
+ pa
+ pa
+ rra
++rra
+ pb
+ pb
+ pb
+@@ -838,37 +860,38 @@ pb
+ pb
+ pb
+ pb
+-ra
+ sa
+-rra
++pb
+ sa
+ pb
+ pb
+ pb
+ sa
+ pb
+-sa
+ pb
+-sa
+ ra
+ pa
+ pa
+-ra
+-ra
+-ra
+ pa
+ pa
+-rra
+ pa
++pa
++ra
++ra
++ra
++ra
+ ra
+ ra
+ pa
+ rra
+-pa
+ rra
+ pa
+ pa
+ pa
++rra
++pa
++rra
++rra
+ pa
+ rra
+ pa
+@@ -883,10 +906,8 @@ ra
+ ra
+ ra
+ ra
+-pa
+-pa
+-pa
+-pa
++ra
++ra
+ pa
+ rra
+ rra
+@@ -895,22 +916,28 @@ rra
+ rra
+ pa
+ rra
+-rra
+ pa
+ pa
+-rra
+ pa
+ pa
+-rra
+ pa
+-rra
+ pa
+ pa
+ rra
+ rra
+ rra
++pa
++rra
++rra
++rra
++rra
++pa
+ rra
+ pa
++pa
++pa
++ra
++ra
+ ra
+ ra
+ ra
+@@ -942,29 +969,26 @@ pa
+ pa
+ pa
+ pa
+-rra
+-rra
+-rra
+-rra
+-pa
+ pa
+ pa
+-rra
+-rra
+ pa
+ pa
+ pa
+ rra
+-pa
++rra
+ pa
+ rra
+ rra
+ pa
+-rra
+ pa
+ pa
+ rra
++rra
+ pa
++pa
++rra
++rra
++rra
+ rra
+ rra
+ pa
+@@ -972,27 +996,36 @@ pa
+ pa
+ pa
+ rra
++rra
+ pa
+ rra
+ rra
++rra
+ pa
++rra
++rra
++rra
+ pa
+ rra
+ rra
++rra
++pa
+ pa
+ pa
+-rra
+ pa
+ pa
+-rra
+ rra
+ pa
+ rra
++rra
+ pa
+ rra
++pa
+ rra
++pa
+ rra
+ pa
++rra
+ pa
+ ra
+ ra
+@@ -1048,32 +1081,31 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
++ra
++ra
++ra
++ra
++ra
+ pa
+ rra
+-rra
++pa
+ rra
+ rra
+ rra
+ pa
+-rra
+-rra
+ pa
+ pa
+ rra
+-rra
+ pa
+ pa
+-rra
+-rra
+-rra
+ pa
+ pa
+ rra
+-pa
+ rra
+ pa
+-rra
+-rra
++pa
+ pa
+ pa
+ pa
+@@ -1084,56 +1116,66 @@ pa
+ pa
+ rra
+ rra
+-rra
+-rra
++pa
+ rra
+ pa
+ rra
+ rra
+ rra
+ rra
+-pa
+ rra
+ pa
++pa
+ rra
++pa
+ rra
+ rra
+ rra
+ pa
+ pa
+ rra
+-pa
+-rra
+ rra
+ rra
++pa
+ rra
+ rra
+ rra
++pa
+ rra
+ rra
+ pa
+ pa
++rra
+ pa
+ pa
++rra
++rra
++rra
+ pa
++rra
++rra
++rra
+ pa
+ pa
++rra
+ pa
+ pa
++rra
+ pa
++rra
+ pa
+ pa
++rra
+ pa
+ pa
+ pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+ rra
+ rra
++rra
++rra
++rra
++pa
++rra
+ pa
+ pa
+ rra
+@@ -1143,13 +1185,12 @@ pa
+ pa
+ pa
+ rra
++rra
+ pa
+ rra
+ pa
+ pa
+ pa
+-rra
+-rra
+ pa
+ pa
+ rra
+@@ -1162,10 +1203,13 @@ rra
+ pa
+ pa
+ rra
++rra
+ pa
+ rra
+ rra
+-pa
++rra
++rra
++rra
+ rra
+ pb
+ pb
+@@ -1220,9 +1264,6 @@ pb
+ pb
+ pb
+ pb
+-rra
+-pb
+-pb
+ pb
+ pb
+ pb
+@@ -1231,7 +1272,6 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+@@ -1249,7 +1289,6 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+@@ -1259,7 +1298,6 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+@@ -1283,6 +1321,7 @@ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
+ pb
+@@ -1302,64 +1341,50 @@ ra
+ sa
+ rra
+ pb
+-rra
+-pb
+ pb
+-rra
++sa
+ pb
+ pb
+-ra
+-ra
+-pa
+-pa
+-pa
+ rra
+-pa
+-pa
+-rra
+-pb
+-pb
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
+ sa
+ pb
+ pb
++sa
++ra
+ ra
+ ra
+ pa
+-rra
+ pa
+ rra
+-pb
+-pb
+-pb
+-pb
+-sa
+-pb
+-sa
+-pb
+-sa
++rra
+ pa
+ pa
+ ra
+ ra
+ ra
++ra
++ra
++ra
+ pa
+ rra
++rra
++rra
++rra
+ pa
++rra
++rra
+ pa
+ pa
+-ra
+-pa
+ pa
+ pa
+-rra
+ pa
+ rra
+-rra
+ pb
+ pb
+ pb
+@@ -1372,14 +1397,10 @@ pb
+ pb
+ pb
+ pb
+-sa
+-ra
+-sa
+-rra
+ pb
+-sa
+ pb
+ pb
++sa
+ pb
+ pb
+ ra
+@@ -1387,14 +1408,19 @@ ra
+ pa
+ rra
+ pa
++rra
++pb
++pb
++pb
++pb
+ ra
+ ra
+ ra
+ pa
+-pa
+-rra
+ rra
+ rra
++pa
++pa
+ rra
+ pb
+ pb
+@@ -1406,31 +1432,22 @@ pb
+ sa
+ pb
+ sa
+-ra
+-pa
+-pa
+-rra
+-pb
+-pb
+-pb
+ pb
+ sa
+ pb
+ sa
+ pb
++pb
++pb
+ sa
+ ra
+-pa
+-rra
+-pa
+-ra
+-ra
+ ra
+ pa
+ pa
+ pa
++pa
+ rra
+-rra
++pa
+ rra
+ pa
+ ra
+@@ -1440,18 +1457,21 @@ ra
+ ra
+ ra
+ ra
++ra
+ pa
+-rra
+-rra
+ pa
+ rra
+ pa
+ pa
+-rra
++pa
+ rra
+ pa
+ pa
+ rra
++rra
++rra
++rra
++rra
+ pa
+ ra
+ ra
+@@ -1466,21 +1486,19 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
+ pa
+ rra
+-rra
+ pa
+ rra
+-pa
+-pa
+ rra
+ pa
+ pa
+ pa
+-pa
+-pa
+-pa
+-pa
++rra
++rra
++rra
+ rra
+ pa
+ pa
+@@ -1488,13 +1506,19 @@ rra
+ rra
+ rra
+ rra
++pa
++pa
++pa
++pa
+ rra
+-rra
++pa
++pa
+ rra
+ rra
+ pa
+ pa
+ rra
++rra
+ pb
+ pb
+ pb
+@@ -1525,25 +1549,25 @@ pb
+ pb
+ pb
+ pb
++pb
++sa
+ ra
+ sa
+ rra
+ pb
+-sa
+ pb
+ pb
+-sa
+ pb
+ pb
+-sa
+-pa
+-pa
+ ra
+ ra
++pa
++rra
++pa
+ ra
+ ra
+ pa
+-rra
++pa
+ rra
+ pa
+ rra
+@@ -1554,17 +1578,31 @@ pb
+ pb
+ pb
+ pb
++pb
++pb
++sa
++pb
++sa
++ra
++pa
++rra
++pb
++pb
+ sa
+ pb
+-pb
++sa
+ pb
+ sa
+ pb
+-rra
++sa
++ra
+ pa
+ pa
++ra
+ pa
+ rra
++pa
++pa
+ rra
+ pa
+ ra
+@@ -1573,17 +1611,18 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
++pa
+ pa
+ rra
+ pa
++rra
+ pa
+ rra
+ rra
+-pa
+-pa
+ rra
+ pa
+-pa
+ rra
+ rra
+ rra
+@@ -1599,54 +1638,61 @@ pb
+ pb
+ pb
+ pb
+-rra
+-pb
+ pb
++sa
+ pb
+ pb
+-rra
+-rra
+ sa
+-rra
+-pb
+-rra
+-rra
+ pb
+ pb
+-rra
+-rra
+ pb
+ pb
+-rra
+-rra
+-rra
++ra
++ra
+ pa
+ pa
++ra
+ pa
+ pa
++rra
+ pa
+ rra
++pa
+ rra
+ pb
+ pb
+ pb
+-rra
++pb
++pb
+ pb
+ pb
+ pb
+ pb
+ pb
+ ra
+-sa
++ra
++pa
++pa
+ rra
+-pb
+ rra
+ pb
+ pb
+-ra
++pb
++pb
++sa
++pb
++sa
++pb
+ sa
+ pa
+ pa
++ra
++ra
++ra
++pa
++rra
++pa
++pa
+ rra
+ pa
+ ra
+@@ -1654,19 +1700,21 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
+ pa
+-rra
+-rra
+ pa
+ pa
+ pa
+ rra
+-pa
++rra
++rra
+ rra
+ rra
+ pa
+ pa
+ pa
++pa
+ ra
+ ra
+ ra
+@@ -1680,36 +1728,42 @@ ra
+ ra
+ ra
+ ra
+-ra
+-pa
+ pa
+ pa
+ rra
+ pa
+-pa
+-pa
+-pa
+ rra
+ rra
+ pa
+-pa
+-rra
+ rra
++pa
+ rra
+ rra
+ rra
+ rra
+ pa
++rra
+ pa
+-pa
++rra
++rra
+ pa
+ rra
+ rra
++pa
++pa
+ rra
+ rra
+ pa
+ pa
+ pa
++pa
++pa
++ra
++ra
++ra
++ra
++ra
++ra
+ ra
+ ra
+ ra
+@@ -1733,41 +1787,49 @@ ra
+ ra
+ ra
+ ra
++ra
++pa
+ pa
++pa
++rra
++rra
+ rra
+ pa
+ pa
+ pa
++rra
+ pa
+ rra
++pa
+ rra
+ pa
+ pa
+ rra
++rra
++pa
++rra
+ pa
+ pa
+ pa
+ rra
++rra
+ pa
+ pa
+ rra
+-pa
+ rra
+ rra
+ pa
+ rra
+-pa
+ rra
+ pa
+ rra
+-rra
+ pa
+ pa
+ rra
++pa
++rra
+ rra
+ rra
+-pa
+-pa
+ pa
+ pa
+ rra
+@@ -1780,12 +1842,16 @@ rra
+ rra
+ pa
+ rra
++pa
+ rra
+ pa
+ pa
+ rra
+ pa
+ rra
++rra
++pb
++pb
+ pb
+ pb
+ pb
+@@ -1829,7 +1895,6 @@ pb
+ pb
+ pb
+ pb
+-rra
+ pb
+ pb
+ pb
+@@ -1854,7 +1919,6 @@ rra
+ sa
+ pb
+ pb
+-sa
+ pb
+ sa
+ pb
+@@ -1864,8 +1928,11 @@ sa
+ pa
+ pa
+ ra
++ra
++ra
+ pa
+-pa
++rra
++rra
+ rra
+ pb
+ pb
+@@ -1876,17 +1943,16 @@ sa
+ pb
+ sa
+ pb
+-pb
+-ra
++sa
+ ra
+ pa
+ pa
+ rra
+-rra
+ pb
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
+ sa
+@@ -1895,14 +1961,12 @@ pa
+ pa
+ ra
+ ra
+-ra
+ pa
+-rra
+ pa
+ rra
+ rra
+-rra
+ pa
++rra
+ pa
+ ra
+ ra
+@@ -1910,16 +1974,11 @@ ra
+ ra
+ ra
+ ra
+-ra
+-pa
+-rra
+-pa
+ pa
+ pa
+ rra
+-pa
+-pa
+ rra
++pa
+ rra
+ rra
+ rra
+@@ -1937,11 +1996,12 @@ pb
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
+-pb
+-ra
+ sa
++ra
++pa
+ rra
+ pb
+ pb
+@@ -1949,17 +2009,22 @@ sa
+ pb
+ sa
+ pb
++sa
+ pb
+ sa
+ ra
+ pa
++rra
+ pa
+ ra
++ra
++ra
+ pa
+ pa
+-pa
+ rra
+ rra
++pa
++rra
+ pb
+ pb
+ pb
+@@ -1971,24 +2036,19 @@ sa
+ pb
+ pb
+ sa
+-ra
+-pa
+-rra
+ pb
+ pb
+ pb
+ pb
+-sa
++rra
++pa
+ pa
+-ra
+-ra
+ ra
+ ra
+ pa
+ rra
+ pa
+ rra
+-rra
+ pa
+ rra
+ pa
+@@ -1998,21 +2058,17 @@ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+ pa
+-pa
+-rra
+-pa
+-rra
+ rra
+ rra
++pa
++pa
+ rra
+ rra
+ pa
+ rra
+ pa
+-rra
++pa
+ pa
+ pa
+ ra
+@@ -2029,14 +2085,13 @@ ra
+ ra
+ ra
+ ra
+-ra
+-pa
+ pa
+ rra
+ rra
+ pa
+ rra
+ pa
++rra
+ pa
+ rra
+ pa
+@@ -2044,21 +2099,21 @@ rra
+ pa
+ pa
+ pa
+-rra
+ pa
+ rra
+-pa
+ rra
+ pa
++pa
++pa
++pa
+ rra
+ rra
+ pa
+ rra
+ rra
+-rra
+ pa
+ rra
+-pa
++rra
+ rra
+ pb
+ pb
+@@ -2090,36 +2145,56 @@ pb
+ pb
+ pb
+ pb
+-ra
++pb
+ sa
+ rra
+-pb
++sa
+ pb
+ pb
+ sa
+ pb
++rra
++rra
++pb
+ pb
++rra
++pa
++pa
++ra
+ ra
+ pa
++rra
+ pa
+ rra
++rra
++rra
++pb
++rra
+ pb
+ pb
+ pb
+ pb
+ pb
+ pb
++rra
++rra
++sa
++rra
+ pb
++rra
++pa
++rra
+ pb
+ pb
+ pb
+ sa
+-ra
++pb
++pb
++rra
+ pa
++rra
+ pa
+ ra
+-ra
+-pa
+ pa
+ rra
+ pa
+@@ -2130,18 +2205,19 @@ ra
+ ra
+ ra
+ ra
++ra
++pa
+ pa
+ pa
+ pa
+ pa
+ rra
++pa
+ rra
+ rra
+ rra
+ pa
+ rra
+-pa
+-rra
+ rra
+ pa
+ rra
+@@ -2157,32 +2233,27 @@ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
+ pb
+-ra
++pb
++rra
++rra
++rra
+ sa
+ rra
+ pb
+ sa
+ pb
+ pb
+-sa
+-pb
+ pb
+-sa
+-pa
++rra
+ pa
+-ra
+-ra
+-ra
+ pa
+ pa
+-rra
+ pa
+ rra
+-rra
+-pb
+ pb
+ pb
+ pb
+@@ -2190,54 +2261,49 @@ pb
+ pb
+ pb
+ pb
++rra
++rra
+ pb
+-sa
+-ra
+-pa
+ rra
+ pb
++rra
+ pb
+-sa
+ pb
+-sa
+ pb
++ra
+ sa
++rra
+ pb
+-sa
+-ra
+-pa
+ rra
+ pa
+ ra
+ ra
+ ra
+ pa
+-rra
+ pa
+ rra
+ pa
+ pa
++pa
+ ra
+ ra
+ ra
+ ra
+ ra
+-ra
+-pa
+ pa
+ rra
++pa
+ rra
+ rra
+-rra
++pa
+ rra
+ pa
+ rra
+ rra
+ pa
+ pa
++rra
+ pa
+-pa
+-ra
+ ra
+ ra
+ ra
+@@ -2254,27 +2320,23 @@ ra
+ ra
+ pa
+ pa
+-rra
+-rra
+-pa
+-rra
+ pa
+ rra
+ rra
+-rra
+-rra
+ pa
+ rra
+ pa
+ rra
+ pa
+-pa
++rra
++rra
+ pa
+ pa
+ rra
+ rra
+ pa
+ pa
++pa
+ rra
+ rra
+ pa
+@@ -2282,6 +2344,10 @@ rra
+ pa
+ rra
+ pa
++rra
++rra
++pa
++pa
+ ra
+ ra
+ ra
+@@ -2310,38 +2376,35 @@ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+-pa
+-pa
+-pa
+ pa
+ rra
+ pa
+-pa
+ rra
+ rra
++pa
++rra
+ rra
++pa
+ rra
+ pa
+ pa
+ pa
+-rra
+-rra
++pa
+ rra
+ pa
+ pa
+ pa
+ rra
++pa
++rra
+ rra
++pa
+ rra
+ rra
+ rra
+ rra
+ pa
+ pa
+-rra
+-rra
+ pa
+ pa
+ rra
+@@ -2350,20 +2413,16 @@ pa
+ rra
+ rra
+ rra
+-pa
+-rra
+ rra
+ rra
+ pa
+-pa
+-pa
+ rra
+ pa
+ rra
+ rra
+ pa
+-pa
+ rra
++pa
+ rra
+ pa
+ pa
+@@ -2371,6 +2430,12 @@ rra
+ pa
+ pa
+ pa
++pa
++rra
++pa
++rra
++pa
++ra
+ ra
+ ra
+ ra
+@@ -2433,44 +2498,56 @@ pa
+ rra
+ rra
+ rra
++rra
+ pa
+ pa
+ pa
+-rra
+ pa
+ pa
+ rra
++rra
++rra
++rra
++pa
+ pa
+ pa
+ pa
+-rra
+ pa
+ rra
++rra
++rra
+ pa
++rra
+ pa
+ pa
+ rra
+-rra
++pa
++pa
+ rra
+ rra
+ rra
+ pa
+ rra
++pa
+ rra
+ rra
+ rra
+ pa
+-pa
+ rra
+ pa
+ pa
+-pa
+ rra
+-pa
++rra
++rra
++rra
++rra
++rra
++rra
+ pa
+ pa
+ rra
+ pa
++pa
+ rra
+ rra
+ pa
+@@ -2479,50 +2556,44 @@ rra
+ pa
+ pa
+ pa
+-rra
+ pa
+-rra
+-rra
+ pa
+-rra
++pa
+ pa
+ pa
+ rra
+ rra
++rra
+ pa
++rra
+ pa
+ pa
+ rra
+-pa
+ rra
+ rra
+ rra
++pa
+ rra
++pa
+ rra
+ pa
+ pa
+ pa
+-rra
+ pa
+ rra
+ pa
+ pa
+-rra
+-rra
+-rra
+-rra
+ pa
+ rra
+ rra
+ pa
+-rra
+ pa
+ rra
+ pa
+ pa
+ rra
+ rra
+-rra
++pa
+ rra
+ pa
+ pa
+@@ -2532,18 +2603,12 @@ pa
+ rra
+ rra
+ pa
+-pa
+-rra
+-pa
+-pa
+ rra
+ rra
+ pa
+-pa
+ rra
+ rra
+ pa
+-rra
+ pa
+ rra
+ pa
+@@ -2669,18 +2734,21 @@ ra
+ ra
+ ra
+ pa
++rra
+ pa
+ pa
+ pa
+-pa
+-pa
++rra
+ pa
+ pa
+ rra
+ pa
+ rra
++rra
++rra
+ pa
+ pa
++rra
+ pa
+ rra
+ pa
+@@ -2688,6 +2756,7 @@ rra
+ rra
+ pa
+ pa
++pa
+ rra
+ rra
+ rra
+@@ -2696,31 +2765,38 @@ pa
+ pa
+ pa
+ pa
+-rra
+ pa
+ pa
+ rra
+ pa
+-pa
+-rra
+ rra
+ rra
+ rra
++pa
++pa
++pa
+ rra
+ rra
+ pa
+-rra
+ pa
+ rra
+ rra
+ pa
+ pa
+ pa
++pa
++pa
++pa
+ rra
+ pa
++pa
++pa
++rra
+ rra
+ pa
+ rra
++pa
++pa
+ rra
+ rra
+ rra
+@@ -2729,6 +2805,9 @@ pa
+ rra
+ rra
+ rra
++pa
++rra
++rra
+ rra
+ rra
+ pa
+@@ -2736,6 +2815,11 @@ rra
+ rra
+ pa
+ pa
++pa
++rra
++pa
++rra
++rra
+ rra
+ pa
+ pa
+@@ -2744,42 +2828,49 @@ rra
+ rra
+ pa
+ rra
++pa
++pa
+ rra
+ rra
+ pa
++pa
++pa
+ rra
+ rra
++pa
+ rra
+ pa
++pa
+ rra
+ rra
+ pa
++rra
+ pa
+ pa
+ pa
+ pa
++rra
+ pa
+ pa
+ rra
+ pa
+ pa
+-pa
+ rra
+ rra
+ rra
+ pa
+ pa
+-rra
+-rra
+ pa
+ rra
+-rra
+-rra
++pa
+ rra
+ pa
+ rra
++pa
+ rra
+ rra
++pa
++pa
+ rra
+ pa
+ pa
+@@ -2788,26 +2879,24 @@ rra
+ rra
+ rra
+ pa
++pa
++pa
+ rra
++pa
+ rra
+ rra
+ rra
+ rra
+-rra
+-rra
++pa
+ rra
+ rra
+ rra
+ pa
+ pa
+ rra
+-pa
+ rra
+ rra
+-pa
+-pa
+ rra
+-pa
+ rra
+ pa
+ pa
+@@ -2816,36 +2905,9 @@ pa
+ rra
+ pa
+ rra
+-rra
+-rra
+-pa
+-rra
+ pa
+ rra
+ pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+-pa
+ rra
+ rra
+ rra
+@@ -2853,7 +2915,7 @@ pa
+ pa
+ rra
+ pa
+-pa
++rra
+ pa
+ rra
+ rra
+@@ -2872,18 +2934,16 @@ rra
+ rra
+ pa
+ pa
+-rra
+ pa
+-rra
+ pa
+ rra
+ pa
+ rra
++rra
+ pa
+ pa
+ pa
+ pa
+-rra
+ pa
+ rra
+ pa
+@@ -2893,19 +2953,17 @@ pa
+ pa
+ rra
+ rra
+-pa
+ rra
+ pa
+ rra
+ pa
+-rra
+ pa
+ rra
++rra
+ pa
+ rra
+ rra
+ pa
+-rra
+ pa
+ pa
+ rra
+@@ -2915,7 +2973,13 @@ rra
+ pa
+ rra
+ pa
++pa
++rra
++rra
++pa
+ rra
++pa
++pa
+ rra
+ pb
+ pb
+@@ -3060,6 +3124,9 @@ pb
+ pb
+ pb
+ pb
++rra
++pb
++pb
+ pb
+ pb
+ pb
+@@ -3146,6 +3213,7 @@ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
+ pb
+@@ -3166,26 +3234,22 @@ pb
+ pb
+ pb
+ pb
+-sa
+-ra
++pb
++rra
++rra
+ sa
+ rra
+ pb
++sa
+ pb
+ pb
+ pb
+-sa
+ pb
+ sa
+-pa
+-pa
+-ra
+-ra
+ ra
+ ra
+ pa
+-rra
+-rra
++pa
+ pa
+ pa
+ rra
+@@ -3196,22 +3260,27 @@ pb
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
+-sa
++ra
++pa
++pa
++rra
+ pb
+ pb
+ pb
+ pb
+-sa
++rra
++pb
+ pb
+-sa
+-ra
+-pa
+ rra
+ pa
++pa
+ ra
+ pa
++rra
++rra
+ pa
+ pa
+ pa
+@@ -3219,23 +3288,13 @@ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+-ra
+-pa
+-rra
+ pa
+ rra
+ pa
+-pa
+-rra
+-rra
+-pa
+ rra
+ rra
+ pa
+ rra
+-pa
+ rra
+ pb
+ pb
+@@ -3243,31 +3302,22 @@ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
+ pb
+ pb
+ pb
++sa
+ pb
++sa
++rra
+ pb
+-pb
+-pb
+-pb
+-pb
+-ra
+-ra
+-pa
+ rra
+-pa
+ rra
+ pb
+ pb
+-pb
+-pb
+-ra
+-ra
+-ra
+-ra
++rra
+ pa
+ pa
+ pa
+@@ -3279,44 +3329,39 @@ pb
+ pb
+ pb
+ pb
++rra
++pb
+ pb
+ pb
++sa
+ pb
+ sa
++rra
+ pb
++rra
++pb
++sa
+ pb
+ sa
+ pb
+ pb
++sa
+ ra
+ pa
+ pa
++pa
+ rra
+ pa
+ pa
+ ra
+-ra
+-ra
+-ra
+-ra
+-ra
+-ra
+-ra
+ pa
+ pa
+-rra
+-rra
+-rra
+ pa
++rra
+ pa
+ pa
+ pa
+-rra
+-rra
+-rra
+ pa
+-rra
+-rra
+ pa
+ ra
+ ra
+@@ -3330,9 +3375,8 @@ ra
+ ra
+ ra
+ ra
+-ra
+ pa
+-rra
++pa
+ pa
+ pa
+ rra
+@@ -3340,23 +3384,27 @@ rra
+ rra
+ pa
+ rra
++rra
++pa
++rra
++rra
++rra
++pa
+ pa
+ pa
+ pa
+ pa
+-rra
+ rra
+ rra
+ pa
+ rra
+ pa
+-rra
+-rra
+ pa
+ pa
+ pa
+ rra
+-rra
++pb
++pb
+ pb
+ pb
+ pb
+@@ -3391,26 +3439,22 @@ ra
+ sa
+ rra
+ pb
+-sa
+-pb
+ pb
+ pb
+ pb
+-ra
+-ra
+-pa
+-rra
++sa
+ pa
+ ra
+ ra
+ ra
++ra
+ pa
+-rra
+ pa
+ rra
+ rra
+ pa
+ rra
++rra
+ pb
+ pb
+ pb
+@@ -3418,49 +3462,51 @@ pb
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
+-sa
+ ra
++ra
++pa
+ pa
+ rra
++rra
++pb
+ pb
+ pb
+ pb
+ pb
+ pb
+ ra
++ra
+ pa
++rra
+ pa
+ ra
+ ra
+ pa
+ pa
+ pa
+-rra
+-rra
+ pa
+ ra
+ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+ pa
+ pa
+-pa
+-rra
+ rra
+ rra
+ pa
+ pa
+-rra
+ pa
+ rra
+ rra
+ rra
+ rra
++pa
++rra
++rra
+ pb
+ pb
+ pb
+@@ -3475,30 +3521,38 @@ pb
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
+ sa
+ ra
++ra
+ pa
++pa
++rra
+ rra
+ pb
+ pb
+ pb
+-sa
+ pb
+ pb
++sa
++pb
++sa
+ ra
+ pa
++rra
+ pa
+ ra
+ ra
++ra
+ pa
++rra
++rra
+ pa
+ pa
+-rra
+ pa
+ rra
+-rra
+ pb
+ pb
+ pb
+@@ -3507,23 +3561,28 @@ pb
+ pb
+ pb
+ pb
+-sa
+ pb
+ pb
++sa
++ra
+ ra
+ pa
+ pa
+ rra
++rra
++pb
+ pb
+ pb
+ pb
+ pb
+ sa
+-ra
++pa
+ ra
+ ra
+ pa
++rra
+ pa
++rra
+ pa
+ pa
+ ra
+@@ -3531,19 +3590,22 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
++ra
+ pa
+-pa
+-rra
+ rra
++pa
+ rra
+ rra
+ pa
++pa
+ rra
+ rra
+ rra
+-pa
+ rra
+ pa
++rra
+ pa
+ pa
+ pa
+@@ -3567,28 +3629,28 @@ pa
+ pa
+ pa
+ pa
+-pa
++rra
+ pa
+ rra
+ rra
+ pa
+ rra
+ pa
+-pa
+ rra
+ pa
+ pa
+ rra
+-rra
++pa
+ pa
+ rra
+ rra
+-pa
+ rra
++pa
+ rra
+ rra
+ rra
+ rra
++pa
+ rra
+ pa
+ ra
+@@ -3618,15 +3680,6 @@ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+-ra
+-pa
+-pa
+-rra
+-rra
+-rra
+-rra
+ pa
+ pa
+ rra
+@@ -3638,12 +3691,11 @@ pa
+ rra
+ rra
+ rra
+-pa
+-rra
+-pa
+ rra
+ rra
+ pa
++pa
++rra
+ rra
+ rra
+ pa
+@@ -3651,17 +3703,22 @@ pa
+ pa
+ rra
+ rra
++pa
++pa
+ rra
+ rra
+ pa
+ pa
+ rra
+-rra
+ pa
+ pa
++rra
++pa
+ pa
+ rra
+ pa
++pa
++rra
+ rra
+ rra
+ rra
+@@ -3671,12 +3728,12 @@ pa
+ rra
+ pa
+ pa
+-rra
+ pa
+-rra
+ pa
++rra
+ pa
+ pa
++rra
+ pa
+ pa
+ pa
+@@ -3743,21 +3800,20 @@ pb
+ pb
+ pb
+ pb
++pb
+ ra
+ sa
+ rra
++sa
+ pb
+ pb
+ sa
+ pb
+-sa
+ pb
+-sa
+-pa
+-ra
++pb
+ ra
+ pa
+-rra
++pa
+ pa
+ pa
+ rra
+@@ -3767,27 +3823,25 @@ pb
+ pb
+ pb
+ pb
+-pb
+-pb
+ sa
+ pb
+-sa
++pb
+ ra
++ra
++pa
+ pa
+ rra
++rra
+ pb
+ pb
+ pb
+ pb
+ pb
+-ra
+-pa
++sa
+ pa
+ ra
+ ra
+-ra
+ pa
+-rra
+ pa
+ pa
+ rra
+@@ -3797,8 +3851,11 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
+ pa
+ pa
++rra
+ pa
+ rra
+ pa
+@@ -3806,9 +3863,9 @@ rra
+ pa
+ rra
+ rra
+-pa
+ rra
+ pa
++pa
+ rra
+ rra
+ pb
+@@ -3826,7 +3883,9 @@ pb
+ pb
+ pb
+ pb
++sa
+ pb
++sa
+ pb
+ sa
+ ra
+@@ -3836,24 +3895,23 @@ rra
+ pb
+ pb
+ pb
++sa
+ pb
+ sa
+ pb
+ pb
+ sa
+-pa
+-pa
+-ra
+-ra
+ ra
+ ra
+ pa
+ pa
+-rra
+-rra
++ra
++pa
+ rra
+ pa
+ pa
++pa
++rra
+ rra
+ pb
+ pb
+@@ -3863,28 +3921,26 @@ pb
+ pb
+ pb
+ pb
+-sa
+ pb
+ sa
+ pb
+-pb
+ sa
++ra
++pa
++pa
++rra
++pb
+ pb
+-sa
+ pb
+-sa
+ pb
+-sa
+-pa
+-pa
+ ra
+ ra
+ pa
+ rra
+ pa
+-pa
+ rra
+ pa
++pa
+ ra
+ ra
+ ra
+@@ -3895,13 +3951,19 @@ ra
+ ra
+ pa
+ pa
+-pa
++rra
+ pa
+ rra
++rra
++pa
+ pa
++rra
+ pa
++rra
++rra
+ pa
+ rra
++rra
+ pa
+ ra
+ ra
+@@ -3913,24 +3975,30 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
++ra
++ra
++ra
++ra
+ pa
+ pa
+ rra
+-rra
+ pa
+ pa
+ pa
+ pa
+ rra
+ pa
+-pa
+ rra
+ pa
+ rra
+ pa
+ rra
++rra
+ pa
+ rra
++pa
+ rra
+ rra
+ rra
+@@ -3971,22 +4039,22 @@ pb
+ pb
+ pb
+ pb
++ra
++sa
++rra
++sa
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
+-pb
+-sa
+-ra
+ ra
+ pa
+ pa
+ ra
+ pa
+ pa
+-rra
+-pa
+ pa
+ rra
+ rra
+@@ -4001,42 +4069,40 @@ pb
+ sa
+ pb
+ sa
+-pb
+-sa
+ ra
+ pa
++pa
+ rra
+ pb
+ pb
+ pb
+-sa
+ pb
+ pb
+ sa
++pb
++sa
++ra
+ pa
+ pa
+ ra
+ ra
+-ra
+-ra
+-pa
+-rra
+ pa
+ pa
+ rra
+ pa
++pa
++ra
+ ra
+ ra
+ ra
+ ra
+ ra
+-pa
+-rra
+ pa
+ pa
+ rra
+ pa
+ pa
++rra
+ pa
+ rra
+ pa
+@@ -4045,8 +4111,7 @@ rra
+ rra
+ pa
+ rra
+-pb
+-pb
++rra
+ pb
+ pb
+ pb
+@@ -4064,21 +4129,28 @@ pb
+ pb
+ sa
+ pb
+-sa
++pb
++ra
+ ra
+ pa
+ rra
++pa
++rra
++pb
++pb
+ pb
+ pb
+-sa
+ pb
+-sa
+ pb
+ sa
+ pa
++pa
++ra
+ ra
+ ra
+ pa
++rra
++pa
+ pa
+ rra
+ rra
+@@ -4088,11 +4160,9 @@ pb
+ pb
+ pb
+ pb
+-sa
+ pb
+-sa
+ pb
+-sa
++pb
+ ra
+ pa
+ pa
+@@ -4101,10 +4171,6 @@ pb
+ pb
+ pb
+ pb
+-sa
+-pb
+-sa
+-pa
+ ra
+ ra
+ pa
+@@ -4122,11 +4188,12 @@ ra
+ ra
+ ra
+ pa
+-pa
+ rra
++pa
+ rra
+ rra
+ pa
++pa
+ rra
+ rra
+ rra
+@@ -4136,7 +4203,6 @@ rra
+ pa
+ pa
+ pa
+-pa
+ ra
+ ra
+ ra
+@@ -4154,6 +4220,7 @@ ra
+ ra
+ pa
+ pa
++rra
+ pa
+ rra
+ pa
+@@ -4164,21 +4231,26 @@ pa
+ rra
+ pa
+ rra
+-pa
+ rra
+ rra
+ pa
+ pa
++rra
++pa
+ pa
++pa
++rra
++rra
+ rra
+-pa
+ pa
+ pa
+ rra
+ rra
+ rra
+ pa
+-pa
++ra
++ra
++ra
+ ra
+ ra
+ ra
+@@ -4212,13 +4284,13 @@ rra
+ rra
+ rra
+ rra
++rra
+ pa
+ pa
+ pa
+ rra
+ rra
+ pa
+-pa
+ rra
+ rra
+ pa
+@@ -4230,13 +4302,13 @@ pa
+ pa
+ pa
+ rra
+-rra
++pa
+ pa
+ pa
+ rra
+ rra
+ pa
+-rra
++pa
+ rra
+ pa
+ pa
+@@ -4245,7 +4317,6 @@ rra
+ pa
+ pa
+ pa
+-pa
+ rra
+ rra
+ pa
+@@ -4329,11 +4400,6 @@ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+-pa
+-rra
+-pa
+ pa
+ rra
+ pa
+@@ -4342,7 +4408,7 @@ pa
+ pa
+ rra
+ pa
+-pa
++rra
+ pa
+ rra
+ pa
+@@ -4350,13 +4416,13 @@ pa
+ rra
+ pa
+ pa
+-pa
+ rra
++pa
+ rra
+ rra
+ rra
+ pa
+-rra
++pa
+ rra
+ rra
+ pa
+@@ -4364,23 +4430,21 @@ pa
+ rra
+ rra
+ rra
+-pa
+ rra
+ pa
+ pa
+ rra
+ pa
+ pa
++pa
+ rra
+ rra
+ pa
+-pa
+ rra
+ pa
+-pa
+-pa
+ rra
+ pa
++pa
+ rra
+ pa
+ rra
+@@ -4391,21 +4455,25 @@ rra
+ pa
+ pa
+ pa
+-rra
+ pa
++pa
++pa
++rra
+ rra
+ rra
+ rra
++pa
+ rra
+ pa
+ pa
++pa
+ rra
+ rra
+ rra
+ pa
+ pa
+ pa
+-rra
++pa
+ pa
+ rra
+ rra
+@@ -4424,27 +4492,23 @@ pa
+ pa
+ rra
+ rra
+-rra
+-pa
+-rra
+ pa
+ rra
+ rra
+ pa
++pa
++rra
+ rra
+ pa
+ pa
+ rra
+ pa
+ pa
+-rra
+-rra
+ pa
+ rra
+ rra
+ rra
+ rra
+-pa
+ rra
+ rra
+ rra
+@@ -4452,6 +4516,10 @@ pa
+ pa
+ rra
+ rra
++rra
++rra
++rra
++pa
+ pa
+ rra
+ pb
+@@ -4577,16 +4645,17 @@ pb
+ pb
+ pb
+ pb
+-sa
+ ra
+ sa
+ rra
+ pb
+ pb
+ pb
++sa
+ pb
++sa
+ pb
+-ra
++sa
+ ra
+ pa
+ rra
+@@ -4596,7 +4665,6 @@ ra
+ pa
+ rra
+ pa
+-rra
+ pa
+ rra
+ pb
+@@ -4606,33 +4674,27 @@ pb
+ pb
+ pb
+ pb
++sa
+ pb
++sa
+ pb
+-ra
+-ra
+-pa
+-pa
+-rra
+-rra
+-pb
+-pb
++sa
+ pb
+ sa
+ pb
+ sa
+ pb
+ pb
+-sa
+-ra
+ ra
+ pa
+ pa
++ra
++pa
+ pa
+ rra
+ rra
+ pa
+ pa
+-pa
+ ra
+ ra
+ ra
+@@ -4643,14 +4705,14 @@ ra
+ ra
+ pa
+ pa
+-pa
+ rra
+ rra
+ rra
+ rra
+ rra
+-pa
+ rra
++pa
++pa
+ rra
+ pa
+ rra
+@@ -4667,17 +4729,23 @@ pb
+ pb
+ pb
+ pb
+-sa
+ pb
+-sa
+ pb
+ sa
++ra
++pa
++pa
++rra
+ pb
+ pb
+-ra
++pb
++pb
++pb
++pb
++sa
+ ra
+ pa
+-rra
++pa
+ pa
+ pa
+ pa
+@@ -4691,6 +4759,12 @@ pb
+ pb
+ pb
+ pb
++sa
++ra
++pa
++pa
++rra
++pb
+ pb
+ pb
+ pb
+@@ -4698,26 +4772,21 @@ pb
+ pb
+ sa
+ ra
++ra
+ pa
+ pa
+ ra
+ ra
+-ra
+ pa
+ pa
+ rra
+ pa
+ rra
+-rra
+-rra
+ pa
+ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+-pa
+ pa
+ pa
+ pa
+@@ -4728,9 +4797,10 @@ rra
+ rra
+ pa
+ rra
+-pa
+ rra
+ pa
++pa
++pa
+ ra
+ ra
+ ra
+@@ -4748,11 +4818,10 @@ ra
+ ra
+ pa
+ pa
+-pa
+-rra
+ rra
+ rra
+ rra
++pa
+ rra
+ pa
+ rra
+@@ -4772,6 +4841,7 @@ pa
+ pa
+ rra
+ pa
++rra
+ pa
+ rra
+ rra
+@@ -4807,42 +4877,48 @@ pb
+ pb
+ pb
+ pb
++sa
+ ra
+ sa
+ rra
+ pb
+ pb
+-sa
+-pb
+ pb
+ sa
+ pb
+-sa
++pb
++ra
+ ra
+ pa
+ pa
+ pa
+ pa
+ rra
++pa
++rra
+ pb
+ pb
+ pb
+ pb
+ pb
+ pb
+-pb
++sa
+ pb
+ sa
++pb
++pb
++ra
+ ra
+ pa
+ pa
+ rra
++rra
+ pb
+ pb
+ pb
+ pb
+-sa
+ pb
++sa
+ pb
+ sa
+ pa
+@@ -4852,16 +4928,13 @@ ra
+ ra
+ ra
+ pa
+-rra
+ pa
+ rra
+-pa
+ rra
+ rra
+ pa
+-ra
+-ra
+-ra
++rra
++pa
+ ra
+ ra
+ ra
+@@ -4869,16 +4942,13 @@ ra
+ ra
+ pa
+ rra
+-rra
+-rra
+ pa
+ pa
+ rra
+ pa
+-rra
+ pa
+-rra
+ pa
++rra
+ pa
+ rra
+ rra
+@@ -4897,19 +4967,20 @@ pb
+ pb
+ pb
+ pb
++sa
+ pb
+ pb
++sa
+ ra
+ pa
+-pa
+ rra
+ pb
+ pb
+ pb
+-pb
+ sa
+ pb
+ pb
++sa
+ ra
+ pa
+ pa
+@@ -4919,10 +4990,11 @@ ra
+ pa
+ rra
+ pa
+-rra
+ pa
+ rra
+ rra
++pa
++rra
+ pb
+ pb
+ pb
+@@ -4939,13 +5011,22 @@ sa
+ pb
+ sa
+ pb
++sa
+ pb
+-ra
++pb
++rra
+ pa
++rra
++rra
+ pa
++ra
++ra
++ra
+ pa
+ rra
+ pa
++rra
++rra
+ pa
+ pa
+ ra
+@@ -4955,6 +5036,7 @@ ra
+ ra
+ ra
+ ra
++ra
+ pa
+ pa
+ pa
+@@ -4963,6 +5045,10 @@ pa
+ rra
+ pa
+ pa
++rra
++rra
++rra
++rra
+ pa
+ rra
+ rra
+@@ -4975,20 +5061,26 @@ ra
+ ra
+ ra
+ ra
++ra
++ra
++ra
++ra
+ pa
+ pa
+ pa
+ rra
+ pa
+ rra
+-rra
++pa
+ rra
+ pa
+ rra
+ pa
+ pa
+ rra
++rra
+ pa
++rra
+ pa
+ pa
+ rra
+@@ -4997,7 +5089,6 @@ pa
+ rra
+ pa
+ rra
+-pa
+ rra
+ pa
+ pa
+@@ -5031,7 +5122,7 @@ ra
+ ra
+ ra
+ ra
+-pa
++ra
+ pa
+ pa
+ pa
+@@ -5068,12 +5159,14 @@ pa
+ pa
+ rra
+ pa
++rra
+ pa
+ rra
+ pa
+ rra
+ rra
+ rra
++rra
+ pa
+ pa
+ rra
+@@ -5084,7 +5177,7 @@ pa
+ rra
+ pa
+ rra
+-rra
++pa
+ pa
+ pa
+ rra
+@@ -5140,6 +5233,8 @@ pb
+ pb
+ pb
+ pb
++rra
++pb
+ pb
+ pb
+ pb
+@@ -5152,23 +5247,25 @@ pb
+ pb
+ pb
+ pb
+-sa
+-ra
+ sa
+ rra
+ pb
+-sa
++rra
++pa
++rra
+ pb
+ pb
+ pb
+-sa
++rra
++rra
++pb
++rra
+ pa
+ ra
+ ra
+ ra
+ pa
+ rra
+-pa
+ rra
+ pa
+ rra
+@@ -5176,33 +5273,30 @@ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
+ sa
+ pb
+ sa
+-pb
+-sa
++rra
+ pb
+ pb
+ pb
+-sa
+ pb
+-sa
+ pb
+-sa
++ra
+ ra
+ pa
++rra
+ pa
+ ra
+ ra
+ ra
+ pa
+-pa
+-pa
+-rra
+ rra
+ rra
++pa
+ rra
+ pa
+ ra
+@@ -5211,8 +5305,8 @@ ra
+ ra
+ ra
+ pa
+-rra
+ pa
++rra
+ pa
+ pa
+ pa
+@@ -5222,12 +5316,14 @@ pa
+ pa
+ rra
+ rra
++rra
+ pb
+ pb
+ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
+ pb
+@@ -5237,30 +5333,25 @@ pb
+ pb
+ pb
+ pb
++ra
+ sa
++rra
+ pb
+-sa
+-pb
++rra
++rra
+ pb
+ pb
+ pb
+ pb
+-sa
++ra
+ ra
+ pa
+ rra
+ pa
+-ra
+-ra
+-ra
+-pa
+ pa
+ pa
+ pa
+ rra
+-rra
+-rra
+-pb
+ pb
+ pb
+ pb
+@@ -5268,52 +5359,47 @@ pb
+ pb
+ pb
+ pb
++rra
+ sa
++rra
+ pb
+-pb
+-ra
+-ra
+-pa
+-pa
+ rra
++pa
+ rra
+ pb
+ pb
+ pb
+-pb
+ sa
+ pb
+ pb
+ sa
+ ra
++ra
+ pa
+ pa
+ ra
+-ra
+-ra
+-pa
+ pa
+ rra
+ rra
+-rra
+ pa
+-rra
+ pa
+ ra
+ ra
+ ra
+ ra
++ra
+ pa
+ rra
+-pa
++rra
+ pa
+ pa
+ rra
+ rra
+ pa
+ pa
+-rra
+ pa
++rra
++rra
+ pa
+ ra
+ ra
+@@ -5329,37 +5415,36 @@ ra
+ ra
+ ra
+ ra
+-ra
+-ra
+ pa
+ pa
+ rra
+-pa
+-rra
+ rra
+ pa
+-pa
+ rra
+ rra
+ rra
+ rra
++rra
++pa
++pa
++pa
+ pa
+ rra
++pa
++pa
++pa
+ rra
+ pa
+ rra
+ rra
+ pa
+ rra
+-pa
+ rra
+ pa
+ pa
+-rra
+ pa
+ pa
+ rra
+-rra
+ pb
+ pb
+ pb
+@@ -5388,20 +5473,29 @@ pb
+ pb
+ pb
+ pb
++rra
+ pb
+ pb
+ pb
+ sa
++ra
++sa
++rra
++pb
++rra
++rra
+ pb
+ pb
+-sa
++rra
+ pb
+ pb
+-sa
++ra
+ ra
+ pa
+ pa
+ pa
++pa
++rra
+ rra
+ pb
+ pb
+@@ -5411,6 +5505,7 @@ pb
+ sa
+ pb
+ pb
++pb
+ ra
+ ra
+ pa
+@@ -5423,10 +5518,8 @@ pb
+ pb
+ sa
+ pb
+-sa
+ pb
+-sa
+-ra
++rra
+ pa
+ rra
+ pa
+@@ -5434,32 +5527,22 @@ ra
+ ra
+ pa
+ pa
++rra
+ pa
+ rra
+ pa
+ ra
+ ra
+ ra
+-ra
+-ra
+-ra
+ pa
+-rra
+ pa
+ pa
+ pa
+-rra
+ pa
+ rra
+-rra
+-rra
+-rra
+-pa
+-pa
+ pa
+ rra
+-pb
+-pb
++rra
+ pb
+ pb
+ pb
+@@ -5475,30 +5558,24 @@ pb
+ pb
+ pb
+ sa
+-pb
++ra
+ sa
+-pb
++rra
+ sa
+ pb
+ pb
+ pb
+-sa
+ pb
+ sa
+-ra
+-pa
+-rra
+ pa
+ ra
+ ra
+ ra
+ ra
+ pa
++pa
+ rra
+ rra
+-pa
+-pa
+-pa
+ rra
+ rra
+ pb
+@@ -5507,35 +5584,27 @@ pb
+ pb
+ pb
+ pb
+-pb
+-pb
+ sa
+ pb
+-pb
+ sa
+-ra
+-pa
+-rra
+ pb
+ pb
+-sa
+ pb
+-sa
+ pb
+ sa
+ pa
+-rra
+-rra
++ra
++ra
+ pa
+ pa
+ rra
+ pa
+-rra
+ pa
+ rra
+-rra
++pa
+ pa
+ rra
++rra
+ pa
+ rra
+ pa
+@@ -5543,33 +5612,26 @@ pa
+ pa
+ rra
+ rra
+-pa
+ rra
+-pa
++rra
+ pa
+ rra
+ rra
+-pa
+ rra
+-pa
+-pa
+ rra
+-pa
+-pa
+-pa
+-pa
+ rra
+ rra
+ rra
++pa
+ rra
+ pa
++rra
++pa
++pa
+ pa
+ pa
+ pa
+ pa
+-rra
+-rra
+-rra
+ rra
+ pa
+ rra
+@@ -5580,36 +5642,23 @@ pa
+ pa
+ rra
+ rra
+-rra
+-rra
+ pa
+ pa
+-rra
+-rra
+ pa
+-rra
+-rra
+ pa
+ pa
+-rra
+-rra
+ pa
+-rra
+-rra
+ pa
+ pa
+ pa
+ rra
+-pa
++rra
+ pa
+ pa
+ pa
+ rra
+ rra
+ rra
+-pa
+-rra
+-pa
+ rra
+ rra
+ rra
+@@ -5617,6 +5666,9 @@ pa
+ pa
+ rra
+ rra
++rra
++rra
++pa
+ pa
+ pa
+ pa
+@@ -5625,15 +5677,24 @@ rra
+ rra
+ rra
+ rra
++pa
++pa
++rra
++rra
++pa
+ rra
++pa
+ rra
+ pa
+ pa
+ rra
+ pa
+ rra
++pa
+ rra
+ pa
++rra
++rra
+ pa
+ pa
+ rra
+@@ -5641,10 +5702,12 @@ pa
+ pa
+ pa
+ rra
++rra
+ pa
+-pa
++rra
+ pa
+ rra
++rra
+ pa
+ rra
+ pa
+@@ -5653,7 +5716,6 @@ rra
+ rra
+ rra
+ rra
+-pa
+ rra
+ rra
+ pa
+@@ -5676,7 +5738,7 @@ pa
+ rra
+ pa
+ pa
+-rra
++pa
+ rra
+ rra
+ rra
+@@ -5722,7 +5784,7 @@ rra
+ rra
+ pa
+ pa
+-rra
++pa
+ rra
+ pa
+ pa
+@@ -5731,7 +5793,7 @@ pa
+ pa
+ rra
+ rra
+-rra
++pa
+ rra
+ rra
+ rra
+@@ -5768,11 +5830,9 @@ rra
+ rra
+ rra
+ pa
+-pa
+ rra
+ rra
+ pa
+-pa
+ rra
+ pa
+ pa
+@@ -5786,11 +5846,10 @@ pa
+ pa
+ rra
+ pa
+-pa
+-rra
+ rra
+ rra
+ rra
++pa
+ rra
+ rra
+ pa
+@@ -5803,9 +5862,9 @@ rra
+ pa
+ pa
+ pa
+-pa
+ rra
+ rra
++pa
+ rra
+ rra
+ rra
+@@ -5842,17 +5901,16 @@ rra
+ rra
+ pa
+ pa
+-pa
+ rra
+ rra
+ pa
+ pa
+ rra
+ rra
+-rra
+ pa
+ rra
+ pa
++rra
+ pa
+ pa
+ pa
+@@ -5860,10 +5918,10 @@ pa
+ pa
+ pa
+ rra
+-pa
+ rra
+ rra
+ pa
++rra
+ pa
+ pa
+ rra
+@@ -5871,7 +5929,6 @@ rra
+ rra
+ rra
+ rra
+-rra
+ pa
+ rra
+ pa
+@@ -5892,15 +5949,17 @@ rra
+ rra
+ rra
+ rra
++pa
+ rra
+ pa
++pa
+ rra
+ pa
++pa
+ rra
+ rra
+ pa
+ pa
+-pa
+ rra
+ rra
+ pa
+@@ -5910,6 +5969,8 @@ pa
+ pa
+ pa
+ rra
++pa
++pa
+ rra
+ pa
+ rra
+@@ -5955,13 +6016,13 @@ pa
+ rra
+ pa
+ pa
++pa
+ rra
+ rra
+ pa
+ rra
+ rra
+ rra
+-pa
+ rra
+ rra
+ pa
+@@ -5970,6 +6031,7 @@ rra
+ rra
+ rra
+ pa
++pa
+ rra
+ pa
+ rra
+@@ -5978,6 +6040,8 @@ rra
+ pa
+ pa
+ pa
++pa
++pa
+ rra
+ rra
+ pa
+@@ -5985,8 +6049,6 @@ pa
+ pa
+ rra
+ rra
+-pa
+-pa
+ rra
+ pa
+ rra
+@@ -5994,7 +6056,6 @@ rra
+ rra
+ pa
+ pa
+-pa
+ rra
+ pa
+ rra
+@@ -6021,8 +6082,7 @@ pa
+ rra
+ rra
+ rra
+-rra
+-rra
++pa
+ rra
+ rra
+ pa
+@@ -6048,11 +6108,12 @@ rra
+ pa
+ pa
+ pa
+-rra
++pa
+ rra
+ pa
+ rra
+ rra
++pa
+ rra
+ rra
+ rra
+@@ -6060,6 +6121,8 @@ pa
+ pa
+ pa
+ pa
++pa
++pa
+ rra
+ pa
+ rra
+@@ -6068,9 +6131,11 @@ pa
+ pa
+ pa
+ pa
++pa
+ rra
+ pa
+ pa
++pa
+ rra
+ rra
+ rra
+@@ -6078,23 +6143,26 @@ rra
+ rra
+ rra
+ pa
++pa
++pa
+ rra
+-rra
++pa
++pa
+ pa
+ pa
+ rra
+ rra
+-pa
+ rra
+ rra
+ rra
+-pa
+ rra
++pa
+ rra
+ pa
++pa
++rra
+ rra
+ rra
+-pa
+ rra
+ rra
+ pa
+@@ -6107,15 +6175,18 @@ rra
+ rra
+ rra
+ pa
++pa
+ rra
+ pa
+ pa
+ rra
+ rra
++pa
+ rra
+ pa
+ pa
+ rra
++pa
+ rra
+ rra
+ rra
+@@ -6140,7 +6211,7 @@ rra
+ rra
+ pa
+ rra
+-rra
++pa
+ rra
+ pa
+ rra
+@@ -6152,7 +6223,7 @@ rra
+ rra
+ pa
+ rra
+-pa
++rra
+ pa
+ pa
+ rra
+@@ -6163,7 +6234,7 @@ pa
+ rra
+ rra
+ rra
+-rra
++pa
+ rra
+ rra
+ rra
+@@ -6171,11 +6242,9 @@ rra
+ pa
+ pa
+ pa
+-rra
+-rra
+-rra
+ pa
+ rra
++rra
+ pa
+ pa
+ pa
+@@ -6183,18 +6252,20 @@ pa
+ pa
+ pa
+ pa
+-rra
+ pa
+ pa
+ rra
+-rra
+ pa
+ pa
+ pa
++rra
++pa
++rra
+ pa
+ pa
+ rra
+ rra
++rra
+ pa
+ rra
+ rra
+@@ -6236,22 +6307,20 @@ pa
+ pa
+ rra
+ pa
++pa
+ rra
+ pa
+ pa
+ pa
+ pa
++pa
+ rra
+ rra
+ pa
+ pa
+ rra
+-pa
+ rra
+-pa
+ rra
+-pa
+-pa
+ rra
+ rra
+ pa
+@@ -6268,98 +6337,89 @@ pa
+ rra
+ pa
+ rra
+-rra
+ pa
+-rra
++pa
+ rra
+ pa
+ pa
+ rra
+ pa
++rra
+ pa
+ rra
+ rra
+-pa
+ rra
+ pa
+-pa
+ rra
+ pa
+ pa
++pa
+ rra
+ pa
+ rra
+ rra
+ rra
+-pa
+ rra
+ pa
+ pa
+ pa
+-rra
+-rra
+-rra
+ pa
+ rra
+ pa
+ rra
+ rra
+ rra
+-rra
+-pa
+ pa
+ rra
+ pa
+ pa
+-rra
+-rra
+ pa
+ pa
+ rra
+-pa
+ rra
+ rra
+ pa
+-pa
+ rra
+ pa
+ rra
+-pa
++rra
+ rra
+ rra
+ pa
+ pa
++rra
+ pa
+ rra
+ rra
+ pa
+ pa
+ pa
+-pa
+-pa
+-pa
+ rra
+ pa
+ pa
++rra
++rra
+ pa
+ pa
+ pa
++rra
+ pa
++rra
+ pa
++rra
++rra
+ pa
+ pa
+ pa
++rra
++rra
+ pa
+ pa
+ pa
+ pa
+ pa
+ pa
+-pa
+-pa
+-pa
+-pa
+-pa
++rra
+ pa
+ pa
+ pa
+@@ -6399,7 +6459,7 @@ pa
+ pa
+ pa
+ rra
+-pa
++rra
+ pa
+ pa
+ rra
+@@ -6411,7 +6471,7 @@ pa
+ rra
+ pa
+ rra
+-rra
++pa
+ pa
+ rra
+ pa
+@@ -6425,10 +6485,10 @@ rra
+ pa
+ rra
+ rra
+-rra
+-pa
+ pa
++rra
+ pa
++rra
+ pa
+ rra
+ rra
+@@ -6441,7 +6501,7 @@ pa
+ rra
+ rra
+ rra
+-pa
++rra
+ rra
+ rra
+ pa
+@@ -6451,7 +6511,7 @@ pa
+ pa
+ pa
+ pa
+-pa
++rra
+ pa
+ rra
+ rra
+@@ -6463,10 +6523,10 @@ pa
+ rra
+ rra
+ pa
+-rra
+ pa
+ pa
+-rra
++pa
++pa
+ rra
+ rra
+ rra
+@@ -6476,7 +6536,7 @@ pa
+ pa
+ rra
+ rra
+-rra
++pa
+ rra
+ rra
+ rra
+@@ -6487,23 +6547,22 @@ rra
+ rra
+ pa
+ rra
+-pa
++rra
+ pa
+ rra
+ rra
+ rra
+ pa
+ pa
+-rra
+-rra
++pa
+ rra
+ rra
+ pa
+ pa
+-rra
+ pa
+ rra
+ pa
++rra
+ pa
+ pa
+ pa
+@@ -6511,10 +6570,11 @@ rra
+ rra
+ rra
+ rra
++rra
+ pa
+ rra
+ pa
+ rra
+ pa
+ pa
+-rra
++pa
+diff --git a/push_swap/main_checker.c b/push_swap/main_checker.c
+index 546c1b5..8d7cd05 100644
+--- a/push_swap/main_checker.c
++++ b/push_swap/main_checker.c
+@@ -15,15 +15,15 @@
+ t_bool	input_loop_2(t_push_swap *ps)
+ {
+ 	if (!ft_strcmp(ps->buffer, OP_RRA))
+-		op_rra_n(ps, 1);
++		op_rra(ps);
+ 	else if (!ft_strcmp(ps->buffer, OP_RRB))
+-		op_rrb_n(ps, 1);
++		op_rrb(ps);
+ 	else if (!ft_strcmp(ps->buffer, OP_RRR))
+ 		op_rrr(ps);
+ 	else if (!ft_strcmp(ps->buffer, OP_SA))
+-		op_sa_n(ps, 1);
++		op_sa(ps);
+ 	else if (!ft_strcmp(ps->buffer, OP_SB))
+-		op_sb_n(ps, 1);
++		op_sb(ps);
+ 	else if (!ft_strcmp(ps->buffer, OP_SS))
+ 		op_ss(ps);
+ 	else
+@@ -37,13 +37,13 @@ t_bool	input_loop(t_push_swap *ps)
+ 	while (get_next_line(0, &ps->buffer) > 0)
+ 	{
+ 		if (!ft_strcmp(ps->buffer, OP_PA))
+-			op_pa_n(ps, 1);
++			op_pa(ps);
+ 		else if (!ft_strcmp(ps->buffer, OP_PB))
+-			op_pb_n(ps, 1);
++			op_pb(ps);
+ 		else if (!ft_strcmp(ps->buffer, OP_RA))
+-			op_ra_n(ps, 1);
++			op_ra(ps);
+ 		else if (!ft_strcmp(ps->buffer, OP_RB))
+-			op_rb_n(ps, 1);
++			op_rb(ps);
+ 		else if (!ft_strcmp(ps->buffer, OP_RR))
+ 			op_rr(ps);
+ 		else if (!input_loop_2(ps))
+diff --git a/push_swap/push_swap b/push_swap/push_swap
+index f2d0eed..4d75995 100755
+Binary files a/push_swap/push_swap and b/push_swap/push_swap differ
+diff --git a/push_swap/push_swap.dSYM/Contents/Resources/DWARF/push_swap b/push_swap/push_swap.dSYM/Contents/Resources/DWARF/push_swap
+index 01af0fe..7d7927d 100644
+Binary files a/push_swap/push_swap.dSYM/Contents/Resources/DWARF/push_swap and b/push_swap/push_swap.dSYM/Contents/Resources/DWARF/push_swap differ
+diff --git a/push_swap/sort_merge.c b/push_swap/sort_merge.c
+index 23e41d1..856d45e 100644
+--- a/push_swap/sort_merge.c
++++ b/push_swap/sort_merge.c
+@@ -47,12 +47,12 @@ void		merge(t_push_swap *ps, int len_h1, int len_h2)
+ 		if (ps->pile_a && ps->pile_b &&
+ 				ps->pile_a->bottom->num < ps->pile_b->num)
+ 		{
+-			((ps->i) ? op_rrb_custom_b(ps): 0);
++			//((ps->i) ? op_rrb_custom_b(ps): 0);
+ 			op_pa_n(ps, 1);
+ 			ps->i++;
+ 			continue ;
+ 		}
+-		((ps->j) ? op_rrb_custom_a(ps): 0);
++		//((ps->j) ? op_rrb_custom_a(ps): 0);
+ 		op_rra_n(ps, 1);
+ 		ps->j++;
+ 	}
+diff --git a/push_swap_clone b/push_swap_clone
+--- a/push_swap_clone
++++ b/push_swap_clone
+@@ -1 +1 @@
+-Subproject commit 1e842aaeb88996698ebf4ebacdd23d0ee235eb56
++Subproject commit 1e842aaeb88996698ebf4ebacdd23d0ee235eb56-dirty
